@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海角大陆今日直接访问-今日直达入口_海角大陆热门内容_访问方式对比</title>
+  <meta name="description" content="海角大陆今日直接访问页面，提供今日直达入口、热门内容推荐与访问方式对比。适合想快速找到海角大陆访问路径、了解今日更新内容的用户参考。">
+  <meta name="keywords" content="海角大陆入口,今日直达,访问方式对比,热门内容推荐,海角大陆动态">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b3a4b'/%3E%3Cpath d='M8 20 L16 8 L24 20 L16 16 Z' fill='%23f0c35a'/%3E%3Ccircle cx='16' cy='22' r='3' fill='%23f0c35a'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --panel: #ffffff;
+      --ink: #1e2b32;
+      --ink-soft: #3e4f5a;
+      --muted: #6d7c86;
+      --line: #d9d2c5;
+      --line-light: #eae5dc;
+      --brand: #1b3a4b;
+      --brand-mid: #2d5f73;
+      --accent: #c66b3d;
+      --accent-soft: #f0c35a;
+      --shadow: 0 2px 12px rgba(27, 58, 75, 0.07);
+      --radius: 14px;
+      --radius-sm: 8px;
+      --header-height: 58px;
+      --notice-height: 36px;
+      --sticky-offset: 94px;
+      --font: system-ui, -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--sticky-offset);
+    }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: var(--brand-mid);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    button {
+      font-family: inherit;
+      cursor: pointer;
+    }
+    /* 吸顶公告条 + 页头 */
+    .sticky-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .notice-bar {
+      height: var(--notice-height);
+      background: var(--brand);
+      color: #f0e8d8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      letter-spacing: 0.3px;
+      padding: 0 16px;
+      text-align: center;
+      gap: 8px;
+    }
+    .notice-bar strong {
+      color: var(--accent-soft);
+      font-weight: 600;
+    }
+    .site-header {
+      height: var(--header-height);
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 24px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .header-nav a {
+      font-size: 14px;
+      color: var(--ink-soft);
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: background 0.15s;
+    }
+    .header-nav a:hover {
+      background: #eef3f5;
+      text-decoration: none;
+    }
+    .header-search {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .header-search input {
+      width: 170px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      font-size: 13px;
+      background: var(--bg);
+      outline: none;
+      transition: border 0.2s;
+    }
+    .header-search input:focus {
+      border-color: var(--brand-mid);
+    }
+    .header-search button {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .header-search button:hover {
+      background: var(--brand-mid);
+    }
+    /* 主容器 */
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    /* 首屏 */
+    .hero {
+      background: linear-gradient(135deg, #eef5f8 0%, #f7f2e8 100%);
+      border-radius: 0 0 var(--radius) var(--radius);
+      padding: 36px 0 32px;
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--line-light);
+    }
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      flex: 1 1 340px;
+    }
+    .hero-text h1 {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--brand);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .hero-desc {
+      font-size: 15px;
+      color: var(--ink-soft);
+      margin-bottom: 18px;
+      max-width: 560px;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .hero-tags span {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 5px 14px;
+      font-size: 13px;
+      color: var(--brand-mid);
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 24px;
+      border-radius: 24px;
+      font-size: 15px;
+      font-weight: 500;
+      border: none;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background: var(--brand-mid);
+      text-decoration: none;
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--brand);
+      border: 1.5px solid var(--brand);
+      padding: 9px 22px;
+      border-radius: 24px;
+      font-size: 15px;
+      display: inline-block;
+    }
+    .btn-outline:hover {
+      background: rgba(27, 58, 75, 0.06);
+      text-decoration: none;
+    }
+    .hero-visual {
+      flex: 0 1 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* 三栏布局 */
+    .main-layout {
+      display: grid;
+      grid-template-columns: 178px minmax(0, 1fr) 240px;
+      gap: 28px;
+      align-items: start;
+      padding-bottom: 48px;
+    }
+    /* 左栏 */
+    .sidebar-left {
+      position: sticky;
+      top: var(--sticky-offset);
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .side-panel {
+      background: var(--panel);
+      border-radius: var(--radius-sm);
+      padding: 16px 14px;
+      border: 1px solid var(--line-light);
+      box-shadow: var(--shadow);
+    }
+    .side-panel h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--brand);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--accent-soft);
+      letter-spacing: 0.5px;
+    }
+    .side-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .side-nav a {
+      display: block;
+      padding: 7px 10px;
+      border-radius: 6px;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+      transition: background 0.15s;
+    }
+    .side-nav a:hover {
+      background: #f0f4f6;
+      text-decoration: none;
+      color: var(--brand);
+    }
+    .side-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .side-tags a {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 4px 10px;
+      font-size: 12px;
+      color: var(--ink-soft);
+    }
+    .side-tags a:hover {
+      background: #e8efF2;
+      text-decoration: none;
+    }
+    /* 中栏 */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      min-width: 0;
+    }
+    .section-card {
+      background: var(--panel);
+      border-radius: var(--radius);
+      padding: 24px 26px;
+      border: 1px solid var(--line-light);
+      box-shadow: var(--shadow);
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--brand);
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+    .section-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .content-card {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      padding: 16px 14px;
+      border: 1px solid var(--line-light);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .content-card:hover {
+      border-color: var(--brand-mid);
+      box-shadow: 0 2px 10px rgba(27, 58, 75, 0.08);
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+    .card-type {
+      font-size: 11px;
+      background: var(--brand);
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 10px;
+      align-self: flex-start;
+      font-weight: 500;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .card-tags span {
+      font-size: 11px;
+      background: #e6eef1;
+      color: var(--brand-mid);
+      padding: 2px 7px;
+      border-radius: 8px;
+    }
+    .card-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #9aa9b2;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+    /* 紧凑列表 */
+    .compact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+    }
+    .compact-list li {
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--line-light);
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      font-size: 14px;
+    }
+    .compact-list li:last-child {
+      border-bottom: none;
+    }
+    .list-name {
+      font-weight: 600;
+      color: var(--ink);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .list-summary {
+      color: var(--muted);
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .category-item {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 14px 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--brand);
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .category-item:hover {
+      background: #eef4f6;
+      border-color: var(--brand-mid);
+      text-decoration: none;
+    }
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--brand);
+      margin: 22px 0 10px;
+    }
+    .deep-dive h3:first-of-type {
+      margin-top: 0;
+    }
+    .deep-dive p {
+      margin-bottom: 12px;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      max-width: 720px;
+    }
+    .deep-dive ul {
+      margin: 8px 0 16px 20px;
+      color: var(--ink-soft);
+      line-height: 1.8;
+    }
+    .deep-dive li {
+      margin-bottom: 4px;
+    }
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .faq-item {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line-light);
+      overflow: hidden;
+    }
+    .faq-item summary {
+      padding: 12px 16px;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-item summary::after {
+      content: "+";
+      font-size: 18px;
+      color: var(--brand-mid);
+      font-weight: 400;
+    }
+    .faq-item[open] summary::after {
+      content: "−";
+    }
+    .faq-item p {
+      padding: 0 16px 14px;
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    /* 用户评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .comment-item {
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      border: 1px solid var(--line-light);
+    }
+    .comment-user {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand);
+      margin-bottom: 4px;
+    }
+    .comment-text {
+      font-size: 13px;
+      color: var(--ink-soft);
+      line-height: 1.55;
+    }
+    /* 资讯 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .news-item {
+      display: flex;
+      gap: 14px;
+      align-items: baseline;
+    }
+    .news-date {
+      font-size: 12px;
+      color: #9aa9b2;
+      white-space: nowrap;
+      flex-shrink: 0;
+      width: 78px;
+    }
+    .news-body {
+      font-size: 14px;
+    }
+    .news-body strong {
+      color: var(--ink);
+    }
+    .news-body span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    /* 相关推荐标签 */
+    .recommend-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .recommend-tags a {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 7px 16px;
+      font-size: 13.5px;
+      color: var(--ink-soft);
+    }
+    .recommend-tags a:hover {
+      background: #e8f0f3;
+      border-color: var(--brand-mid);
+      text-decoration: none;
+    }
+    /* 右栏 */
+    .sidebar-right {
+      position: sticky;
+      top: var(--sticky-offset);
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .toc-list a {
+      font-size: 13px;
+      color: var(--ink-soft);
+      display: block;
+      padding: 3px 0;
+      border-left: 2px solid transparent;
+      padding-left: 10px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .toc-list a:hover {
+      border-left-color: var(--accent);
+      color: var(--brand);
+      text-decoration: none;
+    }
+    .hot-list {
+      list-style: none;
+      counter-reset: hot;
+    }
+    .hot-list li {
+      counter-increment: hot;
+      padding: 8px 0;
+      border-bottom: 1px dashed var(--line-light);
+      font-size: 13.5px;
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+    }
+    .hot-list li:last-child {
+      border-bottom: none;
+    }
+    .hot-list li::before {
+      content: counter(hot);
+      font-weight: 700;
+      font-size: 12px;
+      color: var(--accent);
+      width: 18px;
+      flex-shrink: 0;
+    }
+    .hot-list a {
+      color: var(--ink-soft);
+    }
+    /* 页尾 */
+    .site-footer {
+      background: var(--brand);
+      color: #d4dde2;
+      padding: 36px 0 24px;
+      margin-top: 12px;
+    }
+    .footer-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 28px;
+    }
+    .footer-brand {
+      flex: 1 1 220px;
+    }
+    .footer-brand .footer-logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #9fb1bb;
+      max-width: 280px;
+    }
+    .footer-groups {
+      display: flex;
+      flex: 2 1 500px;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .footer-group h4 {
+      font-size: 14px;
+      color: var(--accent-soft);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .footer-group a {
+      display: block;
+      font-size: 13px;
+      color: #b8c8d0;
+      padding: 3px 0;
+    }
+    .footer-group a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12px;
+      color: #7f96a1;
+    }
+    /* 搜索无结果 */
+    .no-results {
+      display: none;
+      padding: 16px;
+      background: #fdf6e8;
+      border: 1px solid var(--accent-soft);
+      border-radius: var(--radius-sm);
+      color: #8a5a2b;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+    /* 响应式 */
+    @media (max-width: 1100px) {
+      .main-layout {
+        grid-template-columns: 160px minmax(0, 1fr);
+      }
+      .sidebar-right {
+        display: none;
+      }
+    }
+    @media (max-width: 820px) {
+      .main-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .sidebar-left {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .side-panel {
+        flex: 1 1 180px;
+      }
+      .header-nav {
+        display: none;
+      }
+      .header-search input {
+        width: 120px;
+      }
+      .hero-text h1 {
+        font-size: 24px;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 14px;
+      }
+      .site-header {
+        padding: 0 14px;
+        gap: 10px;
+      }
+      .logo-text {
+        font-size: 17px;
+      }
+      .header-search input {
+        width: 90px;
+      }
+      .section-card {
+        padding: 18px 16px;
+      }
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .comment-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-text h1 {
+        font-size: 21px;
+      }
+      .hero-inner {
+        gap: 20px;
+      }
+      .hero-visual {
+        flex: 0 1 100%;
+      }
+      .footer-groups {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sticky-wrap">
+    <div class="notice-bar">
+      <strong>今日直达</strong> 海角大陆访问路径更新 · 热门内容与分类导航已同步 · 示例数据仅作展示
+    </div>
+    <header class="site-header">
+      <div class="logo-area">
+        <span class="logo-mark">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="9" fill="#1b3a4b"/>
+            <path d="M8 22 L17 7 L26 22 L17 17 Z" fill="#f0c35a"/>
+            <circle cx="17" cy="24" r="3.2" fill="#f0c35a"/>
+          </svg>
+        </span>
+        <span class="logo-text">海角大陆今日直接访问</span>
+      </div>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#intro">简介</a>
+        <a href="/#hot">热门内容</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <div class="header-search">
+        <input type="search" id="searchInput" placeholder="搜索内容名称或标签" aria-label="搜索页面内容">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <!-- 首屏 -->
+    <section class="hero" id="intro">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>海角大陆今日直接访问</h1>
+          <p class="hero-desc">
+            聚焦“今日直接访问”场景，整理海角大陆今日可浏览的内容方向、热门条目与访问方式对比。适合想快速了解今日更新、查找具体内容入口、比较不同访问路径的用户阅读。
+          </p>
+          <div class="hero-tags">
+            <span>今日直达入口</span>
+            <span>访问方式对比</span>
+            <span>热门内容推荐</span>
+            <span>移动端适配</span>
+          </div>
+          <div class="hero-actions">
+            <a href="/#hot" class="btn-primary">查看今日热门</a>
+            <a href="/#deep" class="btn-outline">访问方式对比</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="200" height="140" rx="16" fill="#ffffff" stroke="#d9d2c5" stroke-width="1.5"/>
+            <rect x="36" y="38" width="60" height="8" rx="4" fill="#1b3a4b" opacity="0.85"/>
+            <rect x="36" y="54" width="120" height="6" rx="3" fill="#d9d2c5"/>
+            <rect x="36" y="66" width="90" height="6" rx="3" fill="#eae5dc"/>
+            <circle cx="180" cy="44" r="12" fill="#f0c35a" opacity="0.7"/>
+            <rect x="36" y="90" width="168" height="6" rx="3" fill="#eae5dc"/>
+            <rect x="36" y="102" width="130" height="6" rx="3" fill="#eae5dc"/>
+            <rect x="36" y="122" width="72" height="22" rx="11" fill="#1b3a4b"/>
+            <text x="46" y="137" font-size="10" fill="#ffffff" font-family="sans-serif">今日直达</text>
+            <circle cx="196" cy="134" r="14" fill="#c66b3d" opacity="0.25"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 三栏主内容区 -->
+    <div class="container main-layout">
+      <!-- 左栏 -->
+      <aside class="sidebar-left" aria-label="频道与筛选">
+        <div class="side-panel">
+          <h3>频道导航</h3>
+          <ul class="side-nav">
+            <li><a href="/#intro">今日简介</a></li>
+            <li><a href="/#hot">热门内容推荐</a></li>
+            <li><a href="/#latest">最新更新动态</a></li>
+            <li><a href="/#category">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#recommend">相关推荐</a></li>
+            <li><a href="/#trend">趋势观察</a></li>
+          </ul>
+        </div>
+        <div class="side-panel">
+          <h3>热门标签</h3>
+          <div class="side-tags">
+            <a href="/#hot">今日短篇</a>
+            <a href="/#hot">连载追踪</a>
+            <a href="/#hot">都市情感</a>
+            <a href="/#hot">悬疑推理</a>
+            <a href="/#hot">奇幻冒险</a>
+            <a href="/#hot">完结精选</a>
+            <a href="/#category">通勤阅读</a>
+            <a href="/#category">睡前浏览</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 中栏 -->
+      <div class="main-content">
+        <!-- 板块1：内容简介 -->
+        <section class="section-card" id="intro-detail">
+          <h2 class="section-title">海角大陆今日直接访问 · 内容简介</h2>
+          <p style="color:var(--ink-soft);line-height:1.75;margin-bottom:12px;">
+            <strong>海角大陆今日直接访问</strong> 是面向内容消费者的导航型页面，围绕“今天能看什么、从哪里进入、不同入口有什么区别”组织信息。页面将今日热门条目、更新动态、分类筛选与访问方式对比集中呈现，帮助用户减少反复查找的时间。
+          </p>
+          <p style="color:var(--ink-soft);line-height:1.75;margin-bottom:12px;">
+            在内容类型上，今日条目覆盖今日短篇、连载追踪、都市情感、悬疑推理与奇幻冒险等方向。对于习惯通勤阅读或睡前浏览的用户，可以直接从分类入口进入对应类型；如果更关注“完结了吗”“在哪看”“和别的入口比哪个更顺”这类问题，FAQ 与访问方式对比模块提供了具体说明。
+          </p>
+          <p style="color:var(--ink-soft);line-height:1.75;">
+            页面右侧的页内目录与热门条目帮助快速定位，中栏则按推荐、更新、分类、深度解析、体验指南、问答、评论与资讯等层次展开。所有内容均围绕今日访问场景组织，不涉及与主题无关的扩展。
+          </p>
+        </section>
+
+        <!-- 板块2：热门内容推荐 -->
+        <section class="section-card" id="hot">
+          <h2 class="section-title">今日热门内容推荐</h2>
+          <p class="section-sub">根据今日访问热度与更新节奏整理，涵盖多种类型与场景。</p>
+          <div class="card-grid" id="hotGrid">
+            <div class="content-card" data-search="雾港来信 悬疑推理 今日短篇 通勤阅读">
+              <span class="card-type">悬疑推理</span>
+              <div class="card-title">雾港来信</div>
+              <div class="card-tags"><span>今日短篇</span><span>通勤阅读</span><span>反转</span></div>
+              <p class="card-desc">一封迟到十年的信串起港口旧案，适合通勤途中一口气读完。</p>
+              <div class="card-meta"><span>热度 9.2</span><span>今日更新</span></div>
+            </div>
+            <div class="content-card" data-search="晚风便利店 都市情感 连载追踪 睡前浏览">
+              <span class="card-type">都市情感</span>
+              <div class="card-title">晚风便利店</div>
+              <div class="card-tags"><span>连载追踪</span><span>睡前浏览</span><span>治愈</span></div>
+              <p class="card-desc">深夜便利店店员与常客之间的短篇故事，节奏舒缓适合睡前阅读。</p>
+              <div class="card-meta"><span>热度 8.7</span><span>已更 12 话</span></div>
+            </div>
+            <div class="content-card" data-search="龙骨山记 奇幻冒险 完结精选 周末沉浸">
+              <span class="card-type">奇幻冒险</span>
+              <div class="card-title">龙骨山记</div>
+              <div class="card-tags"><span>完结精选</span><span>周末沉浸</span><span>世界观</span></div>
+              <p class="card-desc">已完结的中篇冒险故事，适合周末集中浏览，世界观完整。</p>
+              <div class="card-meta"><span>热度 8.5</span><span>已完结</span></div>
+            </div>
+            <div class="content-card" data-search="第七码头 悬疑推理 连载追踪 今日直达">
+              <span class="card-type">悬疑推理</span>
+              <div class="card-title">第七码头</div>
+              <div class="card-tags"><span>连载追踪</span><span>今日直达</span><span>群像</span></div>
+              <p class="card-desc">多视角码头悬疑连载，今日更新关键章节，适合追更读者。</p>
+              <div class="card-meta"><span>热度 8.9</span><span>今日 18:00 更新</span></div>
+            </div>
+            <div class="content-card" data-search="春日邮局 都市情感 今日短篇 通勤阅读">
+              <span class="card-type">都市情感</span>
+              <div class="card-title">春日邮局</div>
+              <div class="card-tags"><span>今日短篇</span><span>通勤阅读</span><span>温暖</span></div>
+              <p class="card-desc">邮局职员替人代写书信，每封信带出一段小城故事。</p>
+              <div class="card-meta"><span>热度 8.3</span><span>今日更新</span></div>
+            </div>
+            <div class="content-card" data-search="星屑列车 奇幻冒险 完结精选 睡前浏览">
+              <span class="card-type">奇幻冒险</span>
+              <div class="card-title">星屑列车</div>
+              <div class="card-tags"><span>完结精选</span><span>睡前浏览</span><span>短篇集</span></div>
+              <p class="card-desc">以列车为线索的奇幻短篇集，每篇独立，适合碎片时间。</p>
+              <div class="card-meta"><span>热度 8.1</span><span>已完结</span></div>
+            </div>
+          </div>
+          <div class="no-results" id="noResults">没有找到匹配的内容，请尝试其他关键词。</div>
+        </section>
+
+        <!-- 板块3：最新更新动态 -->
+        <section class="section-card" id="latest">
+          <h2 class="section-title">最新更新动态</h2>
+          <p class="section-sub">今日与近几日的条目更新摘要。</p>
+          <ul class="compact-list">
+            <li><span class="list-name">雾港来信</span><span class="list-summary">更新第 4 节，旧案线索进一步收束。</span></li>
+            <li><span class="list-name">晚风便利店</span><span class="list-summary">新增“雨夜关东煮”篇，延续治愈基调。</span></li>
+            <li><span class="list-name">第七码头</span><span class="list-summary">今日 18:00 更新关键章节，群像视角切换。</span></li>
+            <li><span class="list-name">春日邮局</span><span class="list-summary">新增一封关于“迟到回信”的短篇。</span></li>
+            <li><span class="list-name">龙骨山记</span><span class="list-summary">完结后追加作者后记，补充世界观设定。</span></li>
+            <li><span class="list-name">星屑列车</span><span class="list-summary">短篇集新增“夜航”一篇，保持独立阅读。</span></li>
+            <li><span class="list-name">旧城咖啡馆</span><span class="list-summary">都市情感新连载上线，首日更新两话。</span></li>
+            <li><span class="list-name">山雾档案</span><span class="list-summary">悬疑连载恢复更新，今日更新调查线。</span></li>
+            <li><span class="list-name">日光花园</span><span class="list-summary">完结精选条目加入今日推荐池。</span></li>
+          </ul>
+        </section>
+
+        <!-- 板块4：分类入口 -->
+        <section class="section-card" id="category">
+          <h2 class="section-title">分类入口</h2>
+          <p class="section-sub">按内容类型快速定位，分类名称对应常见搜索方向。</p>
+          <div class="category-grid">
+            <a href="/#hot" class="category-item">今日短篇</a>
+            <a href="/#hot" class="category-item">连载追踪</a>
+            <a href="/#hot" class="category-item">都市情感</a>
+            <a href="/#hot" class="category-item">悬疑推理</a>
+            <a href="/#hot" class="category-item">奇幻冒险</a>
+            <a href="/#hot" class="category-item">完结精选</a>
+            <a href="/#guide" class="category-item">通勤阅读</a>
+            <a href="/#guide" class="category-item">睡前浏览</a>
+          </div>
+        </section>
+
+        <!-- 板块5：深度解析正文 -->
+        <section class="section-card deep-dive" id="deep">
+          <h2 class="section-title">深度解析：今日访问路径与内容选择</h2>
+          <p>
+            对于“海角大陆今日直接访问”这一搜索意图，用户通常希望快速判断今天有哪些内容可看、从哪里进入更直接、不同入口之间有什么区别。下面从内容类型、访问路径与选择依据三个角度展开，帮助减少反复查找。
+          </p>
+          <h3>一、今日内容类型与适用场景</h3>
+          <p>
+            今日条目主要分为短篇、连载与完结精选三类。短篇适合通勤阅读或碎片时间，单次阅读时长约 10—15 分钟；连载适合固定追更，通常有明确的更新节奏；完结精选则适合周末沉浸或睡前浏览，可以按顺序连续阅读。
+          </p>
+          <ul>
+            <li><strong>今日短篇</strong>：篇幅短、情节完整，适合通勤或午休浏览。</li>
+            <li><strong>连载追踪</strong>：更新节奏相对固定，适合有追更习惯的读者。</li>
+            <li><strong>完结精选</strong>：无需等待更新，适合想一次看完的读者。</li>
+          </ul>
+          <h3>二、访问路径对比：直达入口与分类入口</h3>
+          <p>
+            从“今日直接访问”的语义出发，常见的访问路径有两条：一是通过今日推荐或直达入口进入具体条目，二是通过分类入口按类型筛选。直达入口的优势在于减少选择步骤，适合目标明确的读者；分类入口的优势在于可浏览范围更宽，适合想先看看今天有哪些方向的人。
+          </p>
+          <p>
+            两条路径并不互斥。可以在分类入口浏览整体更新，再通过今日推荐进入具体条目。对于移动端用户，分类入口通常转为横向导航，仍然保持可操作。
+          </p>
+          <h3>三、如何判断今日内容是否适合自己</h3>
+          <p>
+            可以从三个维度判断：阅读时长、更新状态与类型偏好。阅读时长决定是否适合当前场景；更新状态帮助判断是否需要追更；类型偏好则决定内容是否值得点开。页面中的标签与分类说明提供了这些判断依据。
+          </p>
+          <ul>
+            <li>阅读时长：短篇一般 10—15 分钟，连载单话 5—8 分钟。</li>
+            <li>更新状态：连载条目标注更新节奏，完结条目标注“已完结”。</li>
+            <li>类型偏好：通过分类入口或标签筛选，快速排除不感兴趣的方向。</li>
+          </ul>
+          <p>
+            综合来看，“海角大陆今日直接访问”的核心需求是减少查找成本，快速进入可消费的内容。页面通过热门推荐、分类入口、更新动态与访问对比，覆盖了从“看什么”到“从哪里进”的完整路径。
+          </p>
+        </section>
+
+        <!-- 板块6：体验指南 -->
+        <section class="section-card" id="guide">
+          <h2 class="section-title">体验指南</h2>
+          <p class="section-sub">页面结构与操作路径说明。</p>
+          <ul class="compact-list">
+            <li><span class="list-name">分类筛选</span><span class="list-summary">通过左栏频道或中栏分类入口，按类型或场景定位内容。</span></li>
+            <li><span class="list-name">搜索查找</span><span class="list-summary">页头搜索框支持按内容名称或标签查找，无结果时给出提示。</span></li>
+            <li><span class="list-name">移动端适配</span><span class="list-summary">窄屏下侧栏内容移至主内容之后，频道转为横向导航。</span></li>
+            <li><span class="list-name">追更与收藏</span><span class="list-summary">连载条目标注更新节奏，可据此判断是否持续关注。</span></li>
+            <li><span class="list-name">推荐扩展</span><span class="list-summary">从热门卡片或相关推荐标签进入相近类型，扩展阅读路径。</span></li>
+          </ul>
+        </section>
+
+        <!-- 板块7：FAQ -->
+        <section class="section-card" id="faq">
+          <h2 class="section-title">常见问题</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>海角大陆今日直接访问适合什么人看？</summary>
+              <p>适合希望快速了解今日内容方向、查找具体条目入口、比较不同访问路径的用户。如果习惯先浏览再选择，可以从分类入口开始；如果目标明确，可以直接看今日热门推荐。</p>
+            </details>
+            <details class="faq-item">
+              <summary>今日短篇一般多久更新一次？</summary>
+              <p>今日短篇通常按日或按周更新，具体以条目说明为准。页面中的更新动态会标注近期更新情况，适合在通勤或午休时浏览。</p>
+            </details>
+            <details class="faq-item">
+              <summary>连载追踪和完结精选有什么区别？</summary>
+              <p>连载追踪是持续更新的条目，适合有追更习惯的读者；完结精选已经全部更新完毕，适合想一次看完或周末沉浸的读者。</p>
+            </details>
+            <details class="faq-item">
+              <summary>移动端访问时分类入口在哪里？</summary>
+              <p>窄屏下左栏频道会转为横向导航或可展开菜单，分类入口同时保留在中栏分类板块中，方便直接点击。</p>
+            </details>
+            <details class="faq-item">
+              <summary>如何比较不同访问路径的便利性？</summary>
+              <p>直达入口适合目标明确、希望减少选择步骤的场景；分类入口适合想先浏览整体方向再决定的情况。页面的深度解析模块对两种路径做了对比。</p>
+            </details>
+            <details class="faq-item">
+              <summary>搜索不到内容怎么办？</summary>
+              <p>可以尝试缩短关键词或改用类型标签搜索。如果仍然没有结果，页面会显示提示，建议从分类入口或热门推荐继续浏览。</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- 板块8：用户评论 -->
+        <section class="section-card" id="comments">
+          <h2 class="section-title">用户评论</h2>
+          <div class="comment-grid">
+            <div class="comment-item"><div class="comment-user">夜航船</div><div class="comment-text">今日短篇的方向挺清楚，通勤时看雾港来信刚好。</div></div>
+            <div class="comment-item"><div class="comment-user">青石巷</div><div class="comment-text">分类入口比预想的好用，直接按连载追踪找更新。</div></div>
+            <div class="comment-item"><div class="comment-user">半盏茶</div><div class="comment-text">晚风便利店适合睡前看，节奏不紧。</div></div>
+            <div class="comment-item"><div class="comment-user">雾中行</div><div class="comment-text">访问方式对比写得比较实在，没有硬推某一种。</div></div>
+            <div class="comment-item"><div class="comment-user">南山南</div><div class="comment-text">第七码头今天更新，群像线越来越清楚。</div></div>
+            <div class="comment-item"><div class="comment-user">旧报纸</div><div class="comment-text">完结精选里的龙骨山记世界观完整，适合周末。</div></div>
+            <div class="comment-item"><div class="comment-user">路灯下</div><div class="comment-text">搜索框能直接搜标签，挺方便。</div></div>
+            <div class="comment-item"><div class="comment-user">小满</div><div class="comment-text">春日邮局每篇都不长，适合碎片时间。</div></div>
+            <div class="comment-item"><div class="comment-user">远山</div><div class="comment-text">最新更新动态汇总得清楚，不用一个个点。</div></div>
+            <div class="comment-item"><div class="comment-user">白鹭洲</div><div class="comment-text">星屑列车短篇集质量稳定，睡前看不费脑。</div></div>
+            <div class="comment-item"><div class="comment-user">无声雨</div><div class="comment-text">FAQ 里关于连载和完结的区别解释得挺明白。</div></div>
+            <div class="comment-item"><div class="comment-user">木棉</div><div class="comment-text">移动端打开也没有横向滚动，阅读体验可以。</div></div>
+            <div class="comment-item"><div class="comment-user">拾光者</div><div class="comment-text">希望今日推荐再多一些悬疑方向。</div></div>
+            <div class="comment-item"><div class="comment-user">江边柳</div><div class="comment-text">相关推荐标签里的“通勤阅读”很实用。</div></div>
+            <div class="comment-item"><div class="comment-user">小岛民</div><div class="comment-text">整体信息密度适中，没有堆砌感。</div></div>
+          </div>
+        </section>
+
+        <!-- 板块9：相关资讯 -->
+        <section class="section-card" id="news">
+          <h2 class="section-title">相关资讯</h2>
+          <div class="news-list">
+            <div class="news-item">
+              <span class="news-date">2025-03-18</span>
+              <div class="news-body"><strong>今日短篇方向新增“城市观察”系列</strong> <span>— 以短篇形式记录城市日常，适合通勤阅读。</span></div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2025-03-17</span>
+              <div class="news-body"><strong>连载追踪更新节奏调整说明</strong> <span>— 部分连载条目改为固定晚间更新，便于追更。</span></div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2025-03-15</span>
+              <div class="news-body"><strong>完结精选新增两部中篇</strong> <span>— 奇幻冒险与都市情感各一部，均可一次看完。</span></div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2025-03-14</span>
+              <div class="news-body"><strong>移动端分类导航优化</strong> <span>— 窄屏下频道转为横向滑动，操作更直接。</span></div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2025-03-12</span>
+              <div class="news-body"><strong>搜索功能支持标签匹配</strong> <span>— 输入类型词或场景词也能找到对应条目。</span></div>
+            </div>
+            <div class="news-item">
+              <span class="news-date">2025-03-10</span>
+              <div class="news-body"><strong>晚间阅读推荐专题上线</strong> <span>— 汇总适合睡前浏览的短篇与连载条目。</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 板块10：相关推荐 -->
+        <section class="section-card" id="recommend">
+          <h2 class="section-title">相关推荐</h2>
+          <p class="section-sub">按具体内容方向与场景整理，便于继续查找。</p>
+          <div class="recommend-tags">
+            <a href="/#hot">悬疑推理短篇</a>
+            <a href="/#hot">都市情感连载</a>
+            <a href="/#hot">奇幻冒险完结</a>
+            <a href="/#guide">通勤阅读推荐</a>
+            <a href="/#guide">睡前浏览条目</a>
+            <a href="/#latest">今日更新追踪</a>
+            <a href="/#deep">访问方式对比</a>
+            <a href="/#category">完结精选入口</a>
+          </div>
+        </section>
+
+        <!-- 板块11：趋势观察 -->
+        <section class="section-card" id="trend">
+          <h2 class="section-title">趋势观察：今日访问偏好</h2>
+          <p style="color:var(--ink-soft);line-height:1.75;margin-bottom:12px;">
+            从近期访问场景看，用户对“今日直接访问”的期待集中在三点：快速判断更新状态、减少选择步骤、明确内容类型。短篇与连载的边界逐渐清晰，完结精选则承接了集中阅读需求。
+          </p>
+          <p style="color:var(--ink-soft);line-height:1.75;">
+            在访问路径上，直达入口与分类入口并存，前者服务目标明确的读者，后者服务希望先浏览再选择的读者。页面结构据此组织，避免将两类需求混在同一条路径中。
+          </p>
+        </section>
+      </div>
+
+      <!-- 右栏 -->
+      <aside class="sidebar-right" aria-label="辅助阅读">
+        <div class="side-panel">
+          <h3>页内目录</h3>
+          <ul class="toc-list">
+            <li><a href="/#intro-detail">内容简介</a></li>
+            <li><a href="/#hot">热门内容推荐</a></li>
+            <li><a href="/#latest">最新更新动态</a></li>
+            <li><a href="/#category">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#recommend">相关推荐</a></li>
+          </ul>
+        </div>
+        <div class="side-panel">
+          <h3>热门条目</h3>
+          <ul class="hot-list">
+            <li><a href="/#hot">雾港来信</a></li>
+            <li><a href="/#hot">第七码头</a></li>
+            <li><a href="/#hot">晚风便利店</a></li>
+            <li><a href="/#hot">龙骨山记</a></li>
+            <li><a href="/#hot">春日邮局</a></li>
+            <li><a href="/#hot">星屑列车</a></li>
+          </ul>
+        </div>
+        <div class="side-panel">
+          <h3>延伸阅读</h3>
+          <ul class="toc-list">
+            <li><a href="/#deep">直达入口与分类入口对比</a></li>
+            <li><a href="/#guide">移动端分类导航说明</a></li>
+            <li><a href="/#trend">今日访问偏好观察</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">海角大陆今日直接访问</div>
+          <p>聚焦今日访问场景的内容导航与信息整理，帮助快速定位热门条目、分类方向与访问路径。</p>
+        </div>
+        <div class="footer-groups">
+          <div class="footer-group">
+            <h4>内容方向</h4>
+            <a href="/#hot">今日短篇</a>
+            <a href="/#hot">连载追踪</a>
+            <a href="/#hot">完结精选</a>
+            <a href="/#hot">都市情感</a>
+          </div>
+          <div class="footer-group">
+            <h4>访问参考</h4>
+            <a href="/#deep">访问方式对比</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#faq">常见问题</a>
+            <a href="/#category">分类入口</a>
+          </div>
+          <div class="footer-group">
+            <h4>资讯与推荐</h4>
+            <a href="/#news">相关资讯</a>
+            <a href="/#recommend">相关推荐</a>
+            <a href="/#trend">趋势观察</a>
+            <a href="/#comments">用户评论</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 海角大陆今日直接访问 · 内容导航示例页</span>
+        <span>部分内容为示例数据，仅用于展示页面结构</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var searchInput = document.getElementById('searchInput');
+      var searchBtn = document.getElementById('searchBtn');
+      var hotGrid = document.getElementById('hotGrid');
+      var noResults = document.getElementById('noResults');
+
+      function doSearch() {
+        var q = (searchInput.value || '').trim().toLowerCase();
+        if (!hotGrid) return;
+        var cards = hotGrid.querySelectorAll('.content-card');
+        var visible = 0;
+        cards.forEach(function(card) {
+          var text = (card.getAttribute('data-search') || '').toLowerCase() + ' ' + card.textContent.toLowerCase();
+          if (!q || text.indexOf(q) !== -1) {
+            card.style.display = '';
+            visible++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+        if (noResults) {
+          noResults.style.display = (q && visible === 0) ? 'block' : 'none';
+        }
+      }
+
+      if (searchBtn) {
+        searchBtn.addEventListener('click', doSearch);
+      }
+      if (searchInput) {
+        searchInput.addEventListener('keyup', function(e) {
+          if (e.key === 'Enter') {
+            doSearch();
+          }
+        });
+        searchInput.addEventListener('input', function() {
+          if (searchInput.value.trim() === '') {
+            doSearch();
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+  </html>
