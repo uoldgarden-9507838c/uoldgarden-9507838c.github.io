@@ -1,0 +1,2204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>每日黑料大赛官网-热门黑料赛道_通勤吃瓜_黑料大赛参赛指南</title>
+    <meta name="description" content="每日黑料大赛官网提供热门黑料赛道、通勤吃瓜内容和参赛指南。第一时间更新黑料大赛赛况、选手动态与吃瓜讨论，适合关注黑料大赛的网友阅读。">
+    <meta name="keywords" content="黑料赛道,吃瓜大赛,参赛指南,热门黑料,赛况追踪">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b1b2f'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23f5a623'/%3E%3Cpath d='M12 16l3 3 6-6' stroke='%231b1b2f' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-body: #f6f5f2;
+            --bg-card: #ffffff;
+            --bg-soft: #f0ede8;
+            --bg-dark: #1b1b2f;
+            --text-main: #1e1e2a;
+            --text-secondary: #555564;
+            --text-light: #8e8e9c;
+            --accent: #d94f30;
+            --accent-soft: #fdf0ec;
+            --accent-glow: #f5a623;
+            --border: #e4e1da;
+            --border-light: #efede8;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 14px rgba(0,0,0,0.06);
+            --shadow-lg: 0 8px 28px rgba(0,0,0,0.08);
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+            --sticky-height: 96px;
+            --announce-height: 38px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(var(--announce-height) + var(--sticky-height) + 12px);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        img, svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        /* ----- 吸顶公告条 ----- */
+        .announce-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg-dark);
+            color: #f0ede8;
+            height: var(--announce-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+            padding: 0 16px;
+            transition: box-shadow 0.2s;
+        }
+        .announce-bar .announce-inner {
+            max-width: 1400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-align: center;
+        }
+        .announce-bar .tag {
+            background: var(--accent);
+            color: #fff;
+            font-size: 11px;
+            padding: 1px 8px;
+            border-radius: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+        .announce-bar a {
+            color: var(--accent-glow);
+            font-weight: 600;
+            border-bottom: 1px dashed rgba(245,166,35,0.4);
+            transition: border-color 0.2s;
+        }
+        .announce-bar a:hover {
+            border-bottom-color: var(--accent-glow);
+        }
+
+        /* ----- 吸顶页头 ----- */
+        .site-header {
+            position: sticky;
+            top: var(--announce-height);
+            z-index: 99;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-light);
+            height: var(--sticky-height);
+            display: flex;
+            align-items: center;
+            transition: box-shadow 0.25s;
+        }
+        .site-header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+        .header-inner {
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        .brand-mark {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-dark);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .brand-mark svg {
+            width: 26px;
+            height: 26px;
+        }
+        .brand-text {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--bg-dark);
+            white-space: nowrap;
+        }
+        .brand-text span {
+            color: var(--accent);
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex: 1;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .header-nav::-webkit-scrollbar { display: none; }
+        .header-nav a {
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+        .header-nav a:hover,
+        .header-nav a:focus-visible {
+            background: var(--bg-soft);
+            color: var(--text-main);
+        }
+        .header-nav a.active {
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+        .btn-ghost {
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            background: transparent;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .btn-ghost:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+        .btn-accent {
+            padding: 7px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            background: var(--accent);
+            color: #fff;
+            transition: background 0.2s, transform 0.1s;
+            white-space: nowrap;
+        }
+        .btn-accent:hover {
+            background: #c43f22;
+        }
+        .btn-accent:active {
+            transform: scale(0.97);
+        }
+
+        /* ----- 首屏 ----- */
+        .hero {
+            max-width: 1400px;
+            margin: 28px auto 20px;
+            padding: 0 24px;
+        }
+        .hero-card {
+            background: linear-gradient(135deg, #1b1b2f 0%, #2a2a45 60%, #1b1b2f 100%);
+            border-radius: var(--radius-lg);
+            padding: 44px 48px;
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 32px;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .hero-card::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -40px;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(217,79,48,0.18) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-card::after {
+            content: '';
+            position: absolute;
+            bottom: -80px;
+            left: 30%;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(245,166,35,0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            color: #ddd;
+            font-size: 12px;
+            padding: 4px 14px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-glow);
+            animation: pulse 1.8s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        .hero h1 {
+            font-size: 38px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+        .hero-desc {
+            font-size: 15px;
+            color: #b8b8cc;
+            line-height: 1.7;
+            max-width: 520px;
+            margin-bottom: 24px;
+        }
+        .hero-desc strong {
+            color: #e8e8f0;
+            font-weight: 600;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .hero-actions .btn-accent {
+            padding: 11px 28px;
+            font-size: 14px;
+        }
+        .hero-actions .btn-outline-light {
+            padding: 11px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #ddd;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .hero-actions .btn-outline-light:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(255,255,255,0.4);
+        }
+
+        .hero-visual {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-visual svg {
+            width: 100%;
+            max-width: 340px;
+            height: auto;
+        }
+
+        /* ----- 三栏主内容区 ----- */
+        .page-layout {
+            max-width: 1400px;
+            margin: 0 auto 40px;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 180px 1fr 250px;
+            gap: 28px;
+            align-items: start;
+        }
+
+        /* 左栏 */
+        .sidebar-left {
+            position: sticky;
+            top: calc(var(--announce-height) + var(--sticky-height) + 20px);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .sidebar-block {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 16px 14px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+        }
+        .sidebar-title {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .channel-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .channel-list a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 8px;
+            border-radius: var(--radius-sm);
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            transition: background 0.15s, color 0.15s;
+        }
+        .channel-list a:hover,
+        .channel-list a:focus-visible {
+            background: var(--bg-soft);
+            color: var(--text-main);
+        }
+        .channel-list a .ch-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--border);
+            flex-shrink: 0;
+            transition: background 0.15s;
+        }
+        .channel-list a:hover .ch-dot {
+            background: var(--accent);
+        }
+        .channel-list a .ch-count {
+            margin-left: auto;
+            font-size: 11px;
+            color: var(--text-light);
+            background: var(--bg-soft);
+            padding: 1px 6px;
+            border-radius: 10px;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .tag-cloud a {
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            background: var(--bg-soft);
+            color: var(--text-secondary);
+            transition: background 0.15s, color 0.15s;
+        }
+        .tag-cloud a:hover {
+            background: var(--accent-soft);
+            color: var(--accent);
+        }
+
+        /* 中栏 */
+        .main-column {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 28px 30px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .section-header h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-header h2::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: var(--accent);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+        .section-more {
+            font-size: 13px;
+            color: var(--text-light);
+            transition: color 0.15s;
+        }
+        .section-more:hover {
+            color: var(--accent);
+        }
+
+        /* 内容简介 */
+        .intro-text p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+        .intro-text strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        /* 热门内容推荐 卡片 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+        .content-card {
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            padding: 16px;
+            transition: box-shadow 0.2s, border-color 0.2s;
+            background: #fff;
+        }
+        .content-card:hover {
+            border-color: var(--border);
+            box-shadow: var(--shadow-md);
+        }
+        .card-top {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        .card-type {
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            letter-spacing: 0.3px;
+        }
+        .card-type.blue {
+            background: #eef2fa;
+            color: #3a6ea5;
+        }
+        .card-type.green {
+            background: #eef7f0;
+            color: #3a7a4b;
+        }
+        .card-type.purple {
+            background: #f3eef8;
+            color: #7a4b9e;
+        }
+        .card-type.orange {
+            background: #fef5e7;
+            color: #b87a1e;
+        }
+        .card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        .card-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 11.5px;
+            color: var(--text-light);
+            flex-wrap: wrap;
+        }
+        .card-meta .score {
+            color: var(--accent-glow);
+            font-weight: 600;
+        }
+        .card-tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .card-tags span {
+            font-size: 11px;
+            padding: 1px 7px;
+            border-radius: 10px;
+            background: var(--bg-soft);
+            color: var(--text-light);
+        }
+
+        /* 最新更新列表 */
+        .update-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .update-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .update-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .update-item:first-child {
+            padding-top: 0;
+        }
+        .update-time {
+            font-size: 12px;
+            color: var(--text-light);
+            white-space: nowrap;
+            min-width: 44px;
+            padding-top: 2px;
+            font-variant-numeric: tabular-nums;
+        }
+        .update-body {
+            flex: 1;
+            min-width: 0;
+        }
+        .update-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+        .update-summary {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* 分类入口 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .category-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            padding: 14px 8px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-soft);
+            transition: background 0.15s, transform 0.1s;
+            text-align: center;
+        }
+        .category-item:hover {
+            background: var(--accent-soft);
+        }
+        .category-item .cat-icon {
+            font-size: 20px;
+            line-height: 1;
+        }
+        .category-item .cat-name {
+            font-size: 12.5px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+        .category-item .cat-count {
+            font-size: 11px;
+            color: var(--text-light);
+        }
+
+        /* 深度解析正文 */
+        .deep-dive h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin: 22px 0 10px;
+            letter-spacing: 0.2px;
+        }
+        .deep-dive h3:first-of-type {
+            margin-top: 0;
+        }
+        .deep-dive p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+        .deep-dive ul {
+            margin: 10px 0 16px;
+            padding-left: 0;
+        }
+        .deep-dive ul li {
+            font-size: 14.5px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            padding: 4px 0 4px 22px;
+            position: relative;
+        }
+        .deep-dive ul li::before {
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 13px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            opacity: 0.6;
+        }
+        .deep-dive strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        /* 体验指南 */
+        .guide-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            counter-reset: step;
+        }
+        .guide-step {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            counter-increment: step;
+        }
+        .guide-step::before {
+            content: counter(step);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--bg-dark);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .guide-step-content h4 {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 3px;
+        }
+        .guide-step-content p {
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .faq-item {
+            border-bottom: 1px solid var(--border-light);
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item details {
+            padding: 2px 0;
+        }
+        .faq-item summary {
+            padding: 13px 0;
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            list-style: none;
+            transition: color 0.15s;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: '+';
+            font-size: 18px;
+            color: var(--text-light);
+            font-weight: 400;
+            transition: transform 0.2s;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+        .faq-item details[open] summary::after {
+            content: '−';
+        }
+        .faq-item summary:hover {
+            color: var(--accent);
+        }
+        .faq-item summary:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+        .faq-answer {
+            padding: 0 0 14px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* 用户评论 */
+        .comment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .comment-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .comment-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .comment-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--bg-soft);
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            letter-spacing: 0.5px;
+        }
+        .comment-body {
+            flex: 1;
+            min-width: 0;
+        }
+        .comment-user {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 2px;
+        }
+        .comment-text {
+            font-size: 13.5px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .comment-time {
+            font-size: 11px;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        /* 相关资讯 */
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .news-item {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .news-item:first-child {
+            padding-top: 0;
+        }
+        .news-date {
+            font-size: 11.5px;
+            color: var(--text-light);
+            margin-bottom: 4px;
+            font-variant-numeric: tabular-nums;
+        }
+        .news-title {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .news-summary {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* 相关推荐 */
+        .related-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .related-tags a {
+            font-size: 13px;
+            padding: 6px 16px;
+            border-radius: 20px;
+            background: var(--bg-soft);
+            color: var(--text-secondary);
+            transition: background 0.15s, color 0.15s;
+            border: 1px solid transparent;
+        }
+        .related-tags a:hover {
+            background: var(--accent-soft);
+            color: var(--accent);
+            border-color: rgba(217,79,48,0.15);
+        }
+
+        /* 精选内容 / 趋势观察 */
+        .trend-panel {
+            background: var(--bg-dark);
+            border-radius: var(--radius-md);
+            padding: 24px 26px;
+            color: #e8e8f0;
+        }
+        .trend-panel h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .trend-panel h2::before {
+            content: '';
+            width: 4px;
+            height: 18px;
+            background: var(--accent-glow);
+            border-radius: 2px;
+        }
+        .trend-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .trend-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--radius-sm);
+            padding: 14px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .trend-item .t-label {
+            font-size: 11px;
+            color: var(--accent-glow);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+        .trend-item .t-title {
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+        .trend-item .t-desc {
+            font-size: 12px;
+            color: #a8a8c0;
+            line-height: 1.55;
+        }
+
+        /* 右栏 */
+        .sidebar-right {
+            position: sticky;
+            top: calc(var(--announce-height) + var(--sticky-height) + 20px);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* 页内目录 */
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .toc-list a {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 5px 8px;
+            border-radius: var(--radius-sm);
+            transition: background 0.15s, color 0.15s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .toc-list a::before {
+            content: '';
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--border);
+            flex-shrink: 0;
+        }
+        .toc-list a:hover {
+            background: var(--bg-soft);
+            color: var(--text-main);
+        }
+        .toc-list a:hover::before {
+            background: var(--accent);
+        }
+
+        /* 热门条目 */
+        .hot-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            counter-reset: hot;
+        }
+        .hot-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 9px 0;
+            border-bottom: 1px solid var(--border-light);
+            counter-increment: hot;
+        }
+        .hot-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .hot-item:first-child {
+            padding-top: 0;
+        }
+        .hot-item::before {
+            content: counter(hot);
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-light);
+            min-width: 18px;
+            text-align: center;
+            flex-shrink: 0;
+            line-height: 1.5;
+        }
+        .hot-item:nth-child(1)::before { color: var(--accent); }
+        .hot-item:nth-child(2)::before { color: var(--accent); }
+        .hot-item:nth-child(3)::before { color: var(--accent); }
+        .hot-title {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-main);
+            line-height: 1.45;
+            transition: color 0.15s;
+        }
+        .hot-title:hover {
+            color: var(--accent);
+        }
+
+        /* 延伸阅读 */
+        .reading-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .reading-item {
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
+            background: var(--bg-soft);
+            transition: background 0.15s;
+        }
+        .reading-item:hover {
+            background: var(--accent-soft);
+        }
+        .reading-item .r-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+        .reading-item .r-desc {
+            font-size: 11.5px;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        /* 页尾 */
+        .site-footer {
+            background: var(--bg-dark);
+            color: #b0b0c4;
+            padding: 44px 24px 28px;
+            margin-top: 20px;
+        }
+        .footer-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr 1fr 1fr;
+            gap: 36px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-brand .f-logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .footer-brand .f-logo span {
+            color: var(--accent);
+        }
+        .footer-brand p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #9494aa;
+            max-width: 340px;
+        }
+        .footer-col h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #e0e0e8;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 13px;
+            color: #9494aa;
+            padding: 3px 0;
+            transition: color 0.15s;
+        }
+        .footer-col a:hover {
+            color: var(--accent-glow);
+        }
+        .footer-bottom {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 12px;
+            color: #6e6e84;
+        }
+        .footer-bottom .disclaimer {
+            font-size: 11.5px;
+            color: #6e6e84;
+        }
+
+        /* 搜索框（页头内） */
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: var(--bg-soft);
+            border-radius: 30px;
+            padding: 0 4px 0 14px;
+            border: 1px solid transparent;
+            transition: border-color 0.2s, background 0.2s;
+            max-width: 200px;
+        }
+        .search-box:focus-within {
+            border-color: var(--accent);
+            background: #fff;
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            padding: 7px 0;
+            width: 100%;
+            outline: none;
+            color: var(--text-main);
+            font-family: inherit;
+        }
+        .search-box input::placeholder {
+            color: var(--text-light);
+        }
+        .search-box button {
+            padding: 5px 8px;
+            color: var(--text-light);
+            font-size: 14px;
+            flex-shrink: 0;
+            transition: color 0.15s;
+        }
+        .search-box button:hover {
+            color: var(--accent);
+        }
+        .search-feedback {
+            font-size: 13px;
+            color: var(--accent);
+            padding: 8px 0 0;
+            display: none;
+        }
+        .search-feedback.visible {
+            display: block;
+        }
+
+        /* 移动端菜单按钮 */
+        .mobile-menu-btn {
+            display: none;
+            width: 38px;
+            height: 38px;
+            border-radius: var(--radius-sm);
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        /* 手机频道横向导航 */
+        .mobile-channels {
+            display: none;
+            overflow-x: auto;
+            gap: 6px;
+            padding: 0 24px 12px;
+            max-width: 1400px;
+            margin: 0 auto;
+            scrollbar-width: none;
+        }
+        .mobile-channels::-webkit-scrollbar { display: none; }
+        .mobile-channels a {
+            font-size: 13px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            white-space: nowrap;
+            border: 1px solid var(--border-light);
+        }
+
+        /* 响应式 */
+        @media (max-width: 1180px) {
+            .page-layout {
+                grid-template-columns: 160px 1fr;
+            }
+            .sidebar-right {
+                display: none;
+            }
+            .hero-card {
+                grid-template-columns: 1fr 300px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .page-layout {
+                grid-template-columns: 1fr;
+            }
+            .sidebar-left {
+                display: none;
+            }
+            .hero-card {
+                grid-template-columns: 1fr;
+                padding: 32px 28px;
+            }
+            .hero-visual {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .trend-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-top {
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+            .header-nav {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: flex;
+            }
+            .header-actions .btn-ghost {
+                display: none;
+            }
+            .search-box {
+                max-width: 160px;
+            }
+            .mobile-channels {
+                display: flex;
+            }
+            .section-card {
+                padding: 22px 20px;
+            }
+        }
+
+        @media (max-width: 560px) {
+            :root {
+                --sticky-height: 64px;
+                --announce-height: 34px;
+            }
+            .header-inner {
+                padding: 0 16px;
+                gap: 12px;
+            }
+            .brand-text {
+                font-size: 15px;
+            }
+            .brand-mark {
+                width: 34px;
+                height: 34px;
+            }
+            .brand-mark svg {
+                width: 22px;
+                height: 22px;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .hero-desc {
+                font-size: 13.5px;
+            }
+            .page-layout {
+                padding: 0 12px;
+                gap: 16px;
+            }
+            .hero {
+                padding: 0 12px;
+                margin-top: 16px;
+            }
+            .hero-card {
+                padding: 24px 18px;
+            }
+            .section-card {
+                padding: 18px 14px;
+            }
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .search-box {
+                max-width: 120px;
+            }
+            .announce-bar {
+                font-size: 11.5px;
+            }
+            .mobile-channels {
+                padding: 0 12px 10px;
+            }
+            .comment-avatar {
+                width: 28px;
+                height: 28px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 吸顶公告条 -->
+    <div class="announce-bar" role="banner">
+        <div class="announce-inner">
+            <span class="tag">速递</span>
+            <span>新一期黑料赛道已开启，通勤吃瓜精选合集上线，<a href="#latest-updates">查看最新动态</a></span>
+        </div>
+    </div>
+
+    <!-- 吸顶页头 -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="/#top" class="brand" aria-label="每日黑料大赛官网 首页">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="7" fill="#1b1b2f"/>
+                        <circle cx="16" cy="16" r="8" fill="#f5a623"/>
+                        <path d="M12 16l3 3 6-6" stroke="#1b1b2f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span class="brand-text">每日黑料大赛官网</span>
+            </a>
+            <nav class="header-nav" aria-label="主题导航">
+                <a href="#hot-content" class="active">热门黑料</a>
+                <a href="#latest-updates">最新动态</a>
+                <a href="#categories">赛道分类</a>
+                <a href="#deep-dive">深度解析</a>
+                <a href="#faq">常见问答</a>
+                <a href="#comments">吃瓜讨论</a>
+            </nav>
+            <div class="header-actions">
+                <div class="search-box" role="search">
+                    <input type="search" id="site-search" placeholder="搜索黑料内容…" aria-label="搜索页面内容">
+                    <button type="button" id="search-btn" aria-label="搜索">🔍</button>
+                </div>
+                <a href="#hot-content" class="btn-ghost">热门推荐</a>
+                <a href="#latest-updates" class="btn-accent">最新动态</a>
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="打开频道菜单" aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 手机频道横向导航 -->
+    <div class="mobile-channels" id="mobile-channels" style="display:none;">
+        <a href="#hot-content">热门黑料</a>
+        <a href="#latest-updates">最新动态</a>
+        <a href="#categories">赛道分类</a>
+        <a href="#deep-dive">深度解析</a>
+        <a href="#faq">常见问答</a>
+        <a href="#comments">吃瓜讨论</a>
+        <a href="#news">相关资讯</a>
+        <a href="#related">相关推荐</a>
+    </div>
+
+    <!-- 首屏 -->
+    <section class="hero" id="top">
+        <div class="hero-card">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="dot"></span> 今日已更新 6 条赛道内容</div>
+                <h1>每日黑料大赛官网</h1>
+                <p class="hero-desc">
+                    聚合<strong>热门黑料赛道</strong>、通勤吃瓜精选与参赛指南。追踪赛况动态，查看选手表现，对比不同赛道风格，这里提供适合快速浏览和深度吃瓜的内容入口。
+                </p>
+                <div class="hero-actions">
+                    <a href="#hot-content" class="btn-accent">浏览热门赛道</a>
+                    <a href="#deep-dive" class="btn-outline-light">了解参赛指南</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <svg viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="20" y="30" width="300" height="180" rx="16" fill="#252540" stroke="#3a3a5a" stroke-width="1.5"/>
+                    <rect x="36" y="48" width="120" height="12" rx="4" fill="#f5a623" opacity="0.8"/>
+                    <rect x="36" y="68" width="200" height="8" rx="4" fill="#4a4a6a"/>
+                    <rect x="36" y="84" width="160" height="8" rx="4" fill="#4a4a6a"/>
+                    <rect x="36" y="108" width="90" height="28" rx="6" fill="#d94f30" opacity="0.9"/>
+                    <rect x="136" y="108" width="80" height="28" rx="6" fill="#3a3a5a"/>
+                    <circle cx="290" cy="52" r="14" fill="#f5a623" opacity="0.15"/>
+                    <circle cx="290" cy="52" r="6" fill="#f5a623" opacity="0.6"/>
+                    <rect x="36" y="152" width="250" height="6" rx="3" fill="#3a3a5a"/>
+                    <rect x="36" y="166" width="220" height="6" rx="3" fill="#3a3a5a"/>
+                    <rect x="36" y="180" width="140" height="6" rx="3" fill="#3a3a5a"/>
+                    <rect x="20" y="220" width="90" height="26" rx="8" fill="#2a2a45" stroke="#3a3a5a"/>
+                    <rect x="120" y="220" width="70" height="26" rx="8" fill="#2a2a45" stroke="#3a3a5a"/>
+                    <rect x="200" y="220" width="60" height="26" rx="8" fill="#2a2a45" stroke="#3a3a5a"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- 三栏主内容区 -->
+    <div class="page-layout">
+
+        <!-- 左栏 -->
+        <aside class="sidebar-left" aria-label="频道导航与标签索引">
+            <div class="sidebar-block">
+                <div class="sidebar-title">频道导航</div>
+                <nav class="channel-list" aria-label="左栏频道">
+                    <a href="#hot-content"><span class="ch-dot"></span>热门黑料<span class="ch-count">12</span></a>
+                    <a href="#latest-updates"><span class="ch-dot"></span>最新动态<span class="ch-count">8</span></a>
+                    <a href="#categories"><span class="ch-dot"></span>赛道分类<span class="ch-count">8</span></a>
+                    <a href="#deep-dive"><span class="ch-dot"></span>深度解析<span class="ch-count">1</span></a>
+                    <a href="#guide"><span class="ch-dot"></span>体验指南<span class="ch-count">1</span></a>
+                    <a href="#faq"><span class="ch-dot"></span>常见问答<span class="ch-count">6</span></a>
+                    <a href="#comments"><span class="ch-dot"></span>吃瓜讨论<span class="ch-count">16</span></a>
+                    <a href="#news"><span class="ch-dot"></span>相关资讯<span class="ch-count">6</span></a>
+                    <a href="#related"><span class="ch-dot"></span>相关推荐<span class="ch-count">8</span></a>
+                </nav>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-title">热门标签</div>
+                <div class="tag-cloud">
+                    <a href="#hot-content">悬疑黑料</a>
+                    <a href="#hot-content">通勤吃瓜</a>
+                    <a href="#hot-content">情感反转</a>
+                    <a href="#categories">都市赛道</a>
+                    <a href="#categories">职场黑料</a>
+                    <a href="#deep-dive">参赛指南</a>
+                    <a href="#faq">完结了吗</a>
+                    <a href="#news">赛况追踪</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 中栏 -->
+        <main class="main-column" id="main-content">
+
+            <!-- 板块1：内容简介 -->
+            <section class="section-card" id="intro">
+                <div class="section-header">
+                    <h2>关于每日黑料大赛</h2>
+                </div>
+                <div class="intro-text">
+                    <p>
+                        <strong>每日黑料大赛官网</strong>是一个聚焦热门黑料赛道与吃瓜内容聚合的展示页面。这里汇集悬疑黑料、情感反转、职场揭秘等多元赛道，为关注黑料大赛的网友提供赛况速览、参赛指南和讨论空间。无论你是通勤路上想快速吃瓜，还是想对比不同赛道的风格特点，都能在下方找到对应的内容入口。
+                    </p>
+                    <p>
+                        页面围绕<strong>热门黑料赛道</strong>展开，涵盖都市情感、职场反转、悬疑揭秘等常见类型。每一条内容都标注了类型标签和简短看点，方便你按兴趣筛选。如果你正在犹豫“悬疑黑料和情感反转哪个更适合通勤看”，分类入口和对比标签可以帮你快速判断。
+                    </p>
+                    <p>
+                        除了内容推荐，这里还整理了<strong>黑料大赛参赛指南</strong>与赛况追踪资讯。从赛道选择到更新时间节奏，从选手表现到社区讨论，页面希望为关注黑料大赛的读者提供一个结构清晰、信息集中的浏览入口。适合喜欢快速浏览标题、按标签跳转、以及想了解大赛整体走向的网友。
+                    </p>
+                </div>
+            </section>
+
+            <!-- 板块2：热门内容推荐 -->
+            <section class="section-card" id="hot-content">
+                <div class="section-header">
+                    <h2>热门黑料赛道推荐</h2>
+                    <a href="#latest-updates" class="section-more">查看最新 →</a>
+                </div>
+                <div class="card-grid" id="hot-cards">
+                    <article class="content-card">
+                        <div class="card-top">
+                            <span class="card-type">悬疑黑料</span>
+                        </div>
+                        <h3 class="card-title">深夜便利店监控里的第三只手</h3>
+                        <div class="card-tags"><span>悬疑反转</span><span>睡前看</span><span>完结</span></div>
+                        <p class="card-desc">一段便利店监控引发连锁猜测，三个视角还原同一晚的离奇细节，结尾反转出乎意料。</p>
+                        <div class="card-meta"><span>🔥 热度 9.2</span><span>⭐ 评分 4.7</span><span>更新于 3 小时前</span></div>
+                    </article>
+                    <article class="content-card">
+                        <div class="card-top">
+                            <span class="card-type blue">都市情感</span>
+                        </div>
+                        <h3 class="card-title">合租室友的聊天记录被公开之后</h3>
+                        <div class="card-tags"><span>情感反转</span><span>通勤吃瓜</span><span>连载中</span></div>
+                        <p class="card-desc">一段被误发的群聊记录揭开合租生活的微妙关系，当事人回应与旁观者说法各执一词。</p>
+                        <div class="card-meta"><span>🔥 热度 8.8</span><span>⭐ 评分 4.5</span><span>更新于 5 小时前</span></div>
+                    </article>
+                    <article class="content-card">
+                        <div class="card-top">
+                            <span class="card-type green">职场黑料</span>
+                        </div>
+                        <h3 class="card-title">年会抽奖名单背后的排序逻辑</h3>
+                        <div class="card-tags"><span>职场观察</span><span>午休看</span><span>已完结</span></div>
+                        <p class="card-desc">从一份年会抽奖名单出发，前员工讲述部门内部的资源分配潜规则，附带避坑建议。</p>
+                        <div class="card-meta"><span>🔥 热度 8.1</span><span>⭐ 评分 4.3</span><span>更新于 8 小时前</span></div>
+                    </article>
+                    <article class="content-card">
+                        <div class="card-top">
+                            <span class="card-type purple">校园赛道</span>
+                        </div>
+                        <h3 class="card-title">毕业照里被裁掉的那个人是谁</h3>
+                        <div class="card-tags"><span>校园往事</span><span>怀旧吃瓜</span><span>完结</span></div>
+                        <p class="card-desc">一张旧毕业照引发集体回忆，评论区接力拼凑出当年未公开的班级故事。</p>
+                        <div class="card-meta"><span>🔥 热度 7.9</span><span>⭐ 评分 4.4</span><span>更新于 12 小时前</span></div>
+                    </article>
+                    <article class="content-card">
+                        <div class="card-top">
+                            <span class="card-type orange">悬疑黑料</span>
+                        </div>
+                        <h3 class="card-title">二手平台卖家头像的同一张脸</h3>
+                        <div class="card-tags"><span>悬疑追踪</span><span>睡前看</span><span>连载中</span></div>
+                        <p class="card-desc">多个二手账号使用相似头像，买家整理时间线后发现背后可能是同一团队操作。</p>
+                        <div class="card-meta"><span>🔥 热度 8.5</span><span>⭐ 评分 4.6</span><span>更新于 1 天前</span></div>
+                    </article>
+                    <article class="content-card">
+                        <div class="card-top">
+                            <span class="card-type blue">情感反转</span>
+                        </div>
+                        <h3 class="card-title">婚礼请柬上的日期改了三次</h3>
+                        <div class="card-tags"><span>情感观察</span><span>通勤吃瓜</span><span>已完结</span></div>
+                        <p class="card-desc">一张请柬的日期变动引发亲友群讨论，当事人朋友讲述背后的家庭协商过程。</p>
+                        <div class="card-meta"><span>🔥 热度 7.6</span><span>⭐ 评分 4.2</span><span>更新于 1 天前</span></div>
+                    </article>
+                </div>
+                <div class="search-feedback" id="search-feedback">没有找到匹配的内容，试试其他关键词？</div>
+            </section>
+
+            <!-- 板块3：最新更新 -->
+            <section class="section-card" id="latest-updates">
+                <div class="section-header">
+                    <h2>最新黑料动态</h2>
+                    <a href="#news" class="section-more">更多资讯 →</a>
+                </div>
+                <div class="update-list">
+                    <div class="update-item">
+                        <span class="update-time">14:20</span>
+                        <div class="update-body">
+                            <div class="update-title">「深夜便利店」悬疑赛道票数上升</div>
+                            <div class="update-summary">该条目进入今日热门前三，评论区讨论集中在结尾反转的合理性。</div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-time">12:45</span>
+                        <div class="update-body">
+                            <div class="update-title">通勤吃瓜合集新增「地铁读物」分类</div>
+                            <div class="update-summary">短篇黑料内容按通勤时长重新整理，每篇阅读约 5—8 分钟。</div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-time">11:10</span>
+                        <div class="update-body">
+                            <div class="update-title">情感反转赛道本周完结作品汇总</div>
+                            <div class="update-summary">三篇已完结内容开放完整阅读，适合不想追更的读者。</div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-time">09:30</span>
+                        <div class="update-body">
+                            <div class="update-title">职场黑料赛道新增「年会后传」系列</div>
+                            <div class="update-summary">延续年会话题，聚焦部门资源分配的后续讨论。</div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-time">昨天 22:15</span>
+                        <div class="update-body">
+                            <div class="update-title">「毕业照裁人」校园赛道热度破 7.9</div>
+                            <div class="update-summary">评论区接力补充细节，形成多视角叙事。</div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-time">昨天 18:40</span>
+                        <div class="update-body">
+                            <div class="update-title">二手平台悬疑线新增时间线梳理</div>
+                            <div class="update-summary">作者按日期整理账号活动规律，便于读者对照查看。</div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-time">昨天 15:05</span>
+                        <div class="update-body">
+                            <div class="update-title">「请柬日期」情感赛道完结评分 4.2</div>
+                            <div class="update-summary">读者反馈集中在真实感和叙事节奏两点。</div>
+                        </div>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-time">昨天 10:20</span>
+                        <div class="update-body">
+                            <div class="update-title">大赛总榜更新：悬疑与情感赛道差距缩小</div>
+                            <div class="update-summary">目前悬疑黑料以微弱优势领先，情感反转赛道紧追其后。</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 板块4：分类入口 -->
+            <section class="section-card" id="categories">
+                <div class="section-header">
+                    <h2>黑料大赛赛道分类</h2>
+                </div>
+                <div class="category-grid">
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">🔍</span>
+                        <span class="cat-name">悬疑黑料</span>
+                        <span class="cat-count">23 条内容</span>
+                    </a>
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">💔</span>
+                        <span class="cat-name">情感反转</span>
+                        <span class="cat-count">18 条内容</span>
+                    </a>
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">💼</span>
+                        <span class="cat-name">职场黑料</span>
+                        <span class="cat-count">15 条内容</span>
+                    </a>
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">🎓</span>
+                        <span class="cat-name">校园往事</span>
+                        <span class="cat-count">11 条内容</span>
+                    </a>
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">🕵️</span>
+                        <span class="cat-name">悬疑追踪</span>
+                        <span class="cat-count">9 条内容</span>
+                    </a>
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">🏙️</span>
+                        <span class="cat-name">都市赛道</span>
+                        <span class="cat-count">14 条内容</span>
+                    </a>
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">🔁</span>
+                        <span class="cat-name">反转合集</span>
+                        <span class="cat-count">7 条内容</span>
+                    </a>
+                    <a href="#hot-content" class="category-item">
+                        <span class="cat-icon">📱</span>
+                        <span class="cat-name">社交黑料</span>
+                        <span class="cat-count">10 条内容</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 板块5：深度解析正文 -->
+            <section class="section-card deep-dive" id="deep-dive">
+                <div class="section-header">
+                    <h2>黑料大赛参赛与观赛指南</h2>
+                </div>
+                <h3>黑料大赛的赛道划分逻辑</h3>
+                <p>每日黑料大赛官网的赛道设置主要围绕内容类型和场景需求展开。悬疑黑料侧重线索铺陈与反转设计，适合睡前或周末集中阅读；情感反转强调关系变化与当事人视角，通勤路上分段看也不容易断档；职场黑料则偏向内部规则与资源分配话题，午休时间浏览更匹配。了解赛道差异，能帮助参赛者和观众快速定位自己感兴趣的方向。</p>
+                <p>从搜索习惯看，用户常问“悬疑黑料和情感反转哪个更适合通勤看”“职场黑料一般多久更新一次”。这其实反映了两个需求：一是内容节奏与阅读场景的匹配，二是更新频率是否适合追更。页面在分类入口和最新动态中分别标注了内容类型和更新时间，方便对照判断。</p>
+
+                <h3>参赛内容的基本要素</h3>
+                <p>一篇完整的黑料大赛参赛内容，通常包含三个要素：清晰的线索或事件起点、可追溯的细节描述、以及合理的收束方式。悬疑赛道看重线索之间的关联性，情感赛道看重当事人视角的完整性，职场赛道则更关注规则层面的普遍性。无论哪个方向，<strong>每日黑料大赛官网</strong>在展示时都会标注类型标签和简短看点，帮助读者在点击前形成预期。</p>
+                <ul>
+                    <li><strong>事件起点：</strong>用一个具体场景或物件切入，避免泛泛而谈。</li>
+                    <li><strong>细节支撑：</strong>时间、地点、对话或截图描述，让内容有据可循。</li>
+                    <li><strong>收束方式：</strong>可以是反转、开放讨论或当事人回应，但需要与前文呼应。</li>
+                </ul>
+
+                <h3>如何对比不同赛道的内容</h3>
+                <p>如果你在几个赛道之间犹豫，可以从三个维度做简单比较：阅读时长、更新节奏和讨论热度。悬疑黑料通常篇幅中等，适合一次读完；情感反转连载比例较高，适合愿意追更的读者；职场黑料的讨论区往往更偏向经验分享。热门内容推荐卡片中同时展示了热度和评分，可以作为参考。需要说明的是，这些指标仅反映页面内的示例排序，不构成外部评价。</p>
+                <p>对于通勤场景，建议优先选择标注“完结”或“短篇”的条目。睡前场景则更适合悬疑追踪类内容，因为线索相对集中，不容易因为中断而失去上下文。如果你更在意讨论氛围，可以关注评论数量较多的条目，通常意味着话题延展性更强。</p>
+
+                <h3>更新节奏与追更建议</h3>
+                <p>页面内的大赛动态按时间倒序排列，最新条目会标注具体时分。连载内容的更新间隔并不固定，有的作者习惯每日一更，有的则集中在周末。建议在浏览时留意条目下方的“更新于”信息，并结合自己的阅读习惯决定是否追更。对于不想等待的读者，分类入口中的“反转合集”和“已完结”标签可以优先查看。</p>
+                <p><strong>每日黑料大赛官网</strong>的页面结构以内容消费为导向，热门推荐、最新动态和分类入口各自承担不同的浏览需求。热门推荐适合快速了解当前讨论集中的方向，最新动态适合追踪赛况变化，分类入口则适合按类型定向浏览。三者配合使用，可以减少在无关内容上的停留时间。</p>
+            </section>
+
+            <!-- 板块6：体验指南 -->
+            <section class="section-card" id="guide">
+                <div class="section-header">
+                    <h2>浏览与使用指南</h2>
+                </div>
+                <div class="guide-steps">
+                    <div class="guide-step">
+                        <div class="guide-step-content">
+                            <h4>按频道快速定位</h4>
+                            <p>页头导航和左栏频道列表提供热门黑料、最新动态、赛道分类等入口。点击即可跳转到对应板块，手机端可通过横向频道条操作。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="guide-step-content">
+                            <h4>用搜索框查找具体内容</h4>
+                            <p>页头搜索框支持在热门推荐卡片中本地筛选。输入“悬疑”“职场”或具体标题片段，匹配的卡片会保留，无结果时会给出提示。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="guide-step-content">
+                            <h4>通过标签和分类筛选方向</h4>
+                            <p>左栏热门标签、分类入口和卡片上的类型标签均可点击跳转。标签覆盖悬疑黑料、通勤吃瓜、情感反转等常见搜索词，方便按兴趣缩小范围。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="guide-step-content">
+                            <h4>关注更新节奏与完结状态</h4>
+                            <p>卡片上标注了“连载中”或“完结”，最新动态中列出了具体更新时间。追更前可以先确认状态，减少等待成本。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="guide-step-content">
+                            <h4>从讨论区延伸阅读</h4>
+                            <p>用户评论和相关资讯提供不同视角的补充信息。看到感兴趣的条目后，可以结合评论区的讨论决定是否深入阅读原文。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 板块7：FAQ -->
+            <section class="section-card" id="faq">
+                <div class="section-header">
+                    <h2>黑料大赛常见问答</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <details>
+                            <summary>每日黑料大赛官网主要提供什么内容？</summary>
+                            <div class="faq-answer">页面聚合热门黑料赛道的内容推荐、最新赛况动态、分类入口和参赛指南，适合想快速了解黑料大赛方向、按类型筛选内容或追踪更新的读者。</div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>悬疑黑料和情感反转，哪个更适合通勤看？</summary>
+                            <div class="faq-answer">如果通勤时间较短，情感反转中的短篇或已完结条目更合适；悬疑黑料线索较集中，适合有连续阅读时间的场景。可以在分类入口按“完结”标签筛选。</div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>黑料大赛的内容一般多久更新一次？</summary>
+                            <div class="faq-answer">更新节奏因作者和赛道而异，有的每日更新，有的集中在周末。最新动态板块会标注具体时间，卡片上也有“更新于”信息，建议以页面显示为准。</div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>职场黑料赛道适合什么人看？</summary>
+                            <div class="faq-answer">职场黑料侧重内部规则、资源分配和沟通场景，适合对职场话题感兴趣、想通过案例了解不同处理方式的读者。午休或碎片时间浏览较合适。</div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>在哪能找到已完结的黑料内容？</summary>
+                            <div class="faq-answer">热门推荐卡片中标注“完结”或“已完结”的条目可以直接查看。分类入口中的“反转合集”也集中了部分完结内容，适合不想追更的读者。</div>
+                        </details>
+                    </div>
+                    <div class="faq-item">
+                        <details>
+                            <summary>页面上的热度和评分是怎么来的？</summary>
+                            <div class="faq-answer">热度和评分是页面内的示例排序数据，用于展示卡片的信息结构，仅在本页范围内参考，不代表外部平台的真实评价或榜单结果。</div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 板块8：用户评论 -->
+            <section class="section-card" id="comments">
+                <div class="section-header">
+                    <h2>吃瓜讨论区</h2>
+                    <span class="section-more">16 条讨论</span>
+                </div>
+                <div class="comment-list">
+                    <div class="comment-item">
+                        <div class="comment-avatar">瓜</div>
+                        <div class="comment-body">
+                            <div class="comment-user">瓜田里的猹</div>
+                            <div class="comment-text">便利店那篇的反转确实没想到，前面埋的细节回看才发现。</div>
+                            <div class="comment-time">2 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">地</div>
+                        <div class="comment-body">
+                            <div class="comment-user">地铁读物爱好者</div>
+                            <div class="comment-text">通勤合集很实用，按阅读时长分类这点好评，早上看短篇刚好。</div>
+                            <div class="comment-time">3 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">职</div>
+                        <div class="comment-body">
+                            <div class="comment-user">年会抽奖绝缘体</div>
+                            <div class="comment-text">职场赛道那篇年会名单的，看完感觉每个公司都有类似操作。</div>
+                            <div class="comment-time">4 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">悬</div>
+                        <div class="comment-body">
+                            <div class="comment-user">悬疑收藏夹</div>
+                            <div class="comment-text">二手平台那条时间线做得挺细，就是更新间隔有点长，等着看后续。</div>
+                            <div class="comment-time">5 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">情</div>
+                        <div class="comment-body">
+                            <div class="comment-user">情感观察员</div>
+                            <div class="comment-text">请柬日期那篇属于温和型反转，不算特别刺激但真实感强，适合睡前看。</div>
+                            <div class="comment-time">6 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">校</div>
+                        <div class="comment-body">
+                            <div class="comment-user">毕业照第三排</div>
+                            <div class="comment-text">毕业照那篇评论区比正文还丰富，集体回忆杀。</div>
+                            <div class="comment-time">7 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">合</div>
+                        <div class="comment-body">
+                            <div class="comment-user">合租选手</div>
+                            <div class="comment-text">聊天记录那篇节奏有点慢，但细节挺多的，适合慢慢看。</div>
+                            <div class="comment-time">8 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">午</div>
+                        <div class="comment-body">
+                            <div class="comment-user">午休十分钟</div>
+                            <div class="comment-text">分类入口如果能加一个“按字数筛选”就好了，有时候只想看超短篇。</div>
+                            <div class="comment-time">9 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">反</div>
+                        <div class="comment-body">
+                            <div class="comment-user">反转爱好者</div>
+                            <div class="comment-text">悬疑和情感两个赛道各有千秋，悬疑看逻辑，情感看共鸣。</div>
+                            <div class="comment-time">10 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">榜</div>
+                        <div class="comment-body">
+                            <div class="comment-user">榜单旁观者</div>
+                            <div class="comment-text">评分挺客观的，4.2 到 4.7 之间，没有全给高分，这点可以。</div>
+                            <div class="comment-time">11 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">夜</div>
+                        <div class="comment-body">
+                            <div class="comment-user">夜猫子吃瓜</div>
+                            <div class="comment-text">睡前看悬疑黑料确实有氛围，但看完容易睡不着，建议搭配轻松内容。</div>
+                            <div class="comment-time">12 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">职</div>
+                        <div class="comment-body">
+                            <div class="comment-user">职场小透明</div>
+                            <div class="comment-text">职场黑料赛道希望能多些正向案例，不全是吐槽向的。</div>
+                            <div class="comment-time">13 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">追</div>
+                        <div class="comment-body">
+                            <div class="comment-user">追更不睡觉</div>
+                            <div class="comment-text">连载中的几篇更新频率不一致，建议在卡片上直接标“日更”或“周更”。</div>
+                            <div class="comment-time">14 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">标</div>
+                        <div class="comment-body">
+                            <div class="comment-user">标签收集者</div>
+                            <div class="comment-text">标签体系挺清楚的，悬疑、情感、职场、校园，找起来不费劲。</div>
+                            <div class="comment-time">15 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">路</div>
+                        <div class="comment-body">
+                            <div class="comment-user">路过看看</div>
+                            <div class="comment-text">整体排版比预想的干净，没有太多弹窗和干扰信息，阅读体验不错。</div>
+                            <div class="comment-time">16 小时前</div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-avatar">新</div>
+                        <div class="comment-body">
+                            <div class="comment-user">新来的瓜友</div>
+                            <div class="comment-text">第一次看这个页面，从最新动态点进来，顺着分类看了好几篇，挺顺的。</div>
+                            <div class="comment-time">17 小时前</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 板块9：相关资讯 -->
+            <section class="section-card" id="news">
+                <div class="section-header">
+                    <h2>黑料大赛相关资讯</h2>
+                </div>
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="news-date">2025-03-18</div>
+                        <div class="news-title">悬疑黑料赛道本周新增三篇连载</div>
+                        <div class="news-summary">围绕日常场景的悬疑短篇数量上升，读者讨论集中在线索合理性。</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2025-03-17</div>
+                        <div class="news-title">通勤吃瓜合集调整分类方式</div>
+                        <div class="news-summary">按阅读时长重新整理，新增“5分钟”“10分钟”标签，方便碎片时间浏览。</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2025-03-16</div>
+                        <div class="news-title">情感反转赛道完结作品评分汇总</div>
+                        <div class="news-summary">本周完结的三篇内容评分集中在4.2—4.5，真实感成为评论高频词。</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2025-03-15</div>
+                        <div class="news-title">职场黑料赛道讨论热度上升</div>
+                        <div class="news-summary">年会、汇报、资源分配等话题引发较多经验分享，评论区互动活跃。</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2025-03-14</div>
+                        <div class="news-title">大赛总榜更新：悬疑与情感差距缩小</div>
+                        <div class="news-summary">悬疑黑料以微弱优势领先，情感反转赛道紧随其后，职场赛道保持稳定。</div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2025-03-13</div>
+                        <div class="news-title">校园往事赛道新增“毕业季”专题</div>
+                        <div class="news-summary">旧照片、同学录、班级群等元素成为近期校园赛道的主要切入点。</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 板块10：相关推荐 -->
+            <section class="section-card" id="related">
+                <div class="section-header">
+                    <h2>按方向浏览黑料内容</h2>
+                </div>
+                <div class="related-tags">
+                    <a href="#hot-content">悬疑短篇反转合集</a>
+                    <a href="#hot-content">通勤五分钟黑料</a>
+                    <a href="#hot-content">情感反转已完结</a>
+                    <a href="#categories">职场资源分配案例</a>
+                    <a href="#categories">校园回忆类黑料</a>
+                    <a href="#news">最新赛况追踪</a>
+                    <a href="#deep-dive">黑料大赛参赛指南</a>
+                    <a href="#faq">连载更新频率查询</a>
+                </div>
+            </section>
+
+            <!-- 板块11：趋势观察 -->
+            <section class="trend-panel" id="trend">
+                <h2>本周趋势观察</h2>
+                <div class="trend-grid">
+                    <div class="trend-item">
+                        <div class="t-label">类型趋势</div>
+                        <div class="t-title">悬疑黑料讨论度上升</div>
+                        <div class="t-desc">日常场景结合反转的短篇更受欢迎，评论区对细节的追问增多。</div>
+                    </div>
+                    <div class="trend-item">
+                        <div class="t-label">场景偏好</div>
+                        <div class="t-title">通勤时段短内容需求明显</div>
+                        <div class="t-desc">标注“5分钟”“完结”的条目点击集中度更高，适合碎片时间。</div>
+                    </div>
+                    <div class="trend-item">
+                        <div class="t-label">比较热点</div>
+                        <div class="t-title">悬疑与情感赛道选择讨论</div>
+                        <div class="t-desc">读者常比较两者在阅读节奏和情绪体验上的差异，分类标签被频繁使用。</div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 右栏 -->
+        <aside class="sidebar-right" aria-label="辅助阅读">
+            <div class="sidebar-block">
+                <div class="sidebar-title">本页目录</div>
+                <nav class="toc-list" aria-label="页内目录">
+                    <a href="#intro">内容简介</a>
+                    <a href="#hot-content">热门赛道</a>
+                    <a href="#latest-updates">最新动态</a>
+                    <a href="#categories">赛道分类</a>
+                    <a href="#deep-dive">深度解析</a>
+                    <a href="#guide">体验指南</a>
+                    <a href="#faq">常见问答</a>
+                    <a href="#comments">吃瓜讨论</a>
+                    <a href="#news">相关资讯</a>
+                    <a href="#related">相关推荐</a>
+                </nav>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-title">热门条目</div>
+                <div class="hot-list">
+                    <a href="#hot-content" class="hot-title">深夜便利店监控里的第三只手</a>
+                    <a href="#hot-content" class="hot-title">合租室友的聊天记录被公开之后</a>
+                    <a href="#hot-content" class="hot-title">二手平台卖家头像的同一张脸</a>
+                    <a href="#hot-content" class="hot-title">年会抽奖名单背后的排序逻辑</a>
+                    <a href="#hot-content" class="hot-title">毕业照里被裁掉的那个人是谁</a>
+                    <a href="#hot-content" class="hot-title">婚礼请柬上的日期改了三次</a>
+                </div>
+            </div>
+            <div class="sidebar-block">
+                <div class="sidebar-title">延伸阅读</div>
+                <div class="reading-list">
+                    <a href="#deep-dive" class="reading-item">
+                        <div class="r-title">黑料大赛赛道选择参考</div>
+                        <div class="r-desc">从阅读时长、更新节奏和讨论热度三个维度对比</div>
+                    </a>
+                    <a href="#faq" class="reading-item">
+                        <div class="r-title">连载内容更新频率说明</div>
+                        <div class="r-desc">常见更新节奏与追更建议整理</div>
+                    </a>
+                    <a href="#guide" class="reading-item">
+                        <div class="r-title">通勤场景内容筛选方法</div>
+                        <div class="r-desc">按标签和完结状态快速定位短篇内容</div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- 页尾 -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="f-logo">每日黑料大赛<span>官网</span></div>
+                    <p>聚焦热门黑料赛道与吃瓜内容，提供赛况动态、参赛指南和分类浏览入口。适合关注黑料大赛方向、按兴趣筛选内容的读者。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>内容频道</h4>
+                    <a href="#hot-content">热门黑料</a>
+                    <a href="#latest-updates">最新动态</a>
+                    <a href="#categories">赛道分类</a>
+                    <a href="#deep-dive">深度解析</a>
+                </div>
+                <div class="footer-col">
+                    <h4>互动与帮助</h4>
+                    <a href="#faq">常见问答</a>
+                    <a href="#comments">吃瓜讨论</a>
+                    <a href="#guide">体验指南</a>
+                    <a href="#news">相关资讯</a>
+                </div>
+                <div class="footer-col">
+                    <h4>热门方向</h4>
+                    <a href="#hot-content">悬疑黑料</a>
+                    <a href="#hot-content">情感反转</a>
+                    <a href="#hot-content">职场黑料</a>
+                    <a href="#hot-content">校园往事</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="disclaimer">部分内容为示例数据，仅用于展示页面结构</span>
+                <span>© 2025 每日黑料大赛官网 · 内容展示页面</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            // 吸顶页头阴影
+            var header = document.getElementById('site-header');
+            var announceHeight = 38;
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 10) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            // 移动端菜单切换
+            var menuToggle = document.getElementById('mobile-menu-toggle');
+            var mobileChannels = document.getElementById('mobile-channels');
+            if (menuToggle && mobileChannels) {
+                menuToggle.addEventListener('click', function() {
+                    var expanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !expanded);
+                    mobileChannels.style.display = expanded ? 'none' : 'flex';
+                });
+            }
+
+            // 本地搜索筛选
+            var searchInput = document.getElementById('site-search');
+            var searchBtn = document.getElementById('search-btn');
+            var hotCards = document.querySelectorAll('#hot-cards .content-card');
+            var feedback = document.getElementById('search-feedback');
+
+            function performSearch() {
+                var query = searchInput.value.trim().toLowerCase();
+                var visibleCount = 0;
+                hotCards.forEach(function(card) {
+                    var text = card.textContent.toLowerCase();
+                    if (query === '' || text.indexOf(query) !== -1) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                if (visibleCount === 0 && query !== '') {
+                    feedback.classList.add('visible');
+                } else {
+                    feedback.classList.remove('visible');
+                }
+            }
+
+            if (searchBtn && searchInput) {
+                searchBtn.addEventListener('click', performSearch);
+                searchInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        performSearch();
+                    }
+                });
+                // 输入清空时恢复
+                searchInput.addEventListener('input', function() {
+                    if (this.value.trim() === '') {
+                        hotCards.forEach(function(c) { c.style.display = ''; });
+                        feedback.classList.remove('visible');
+                    }
+                });
+            }
+
+            // 平滑锚点偏移已通过 CSS scroll-padding-top 处理
+        })();
+    </script>
+</body>
+  </html>
