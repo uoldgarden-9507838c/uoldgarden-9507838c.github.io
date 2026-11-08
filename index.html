@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日大赛mrds平台-赛程看点_参赛流程_组队对比</title>
+<meta name="description" content="每日大赛mrds平台是聚焦每日赛事与创意比拼的内容门户，汇总赛程看点、参赛流程、评审规则与组队选择对比，适合参赛者与观赛用户查看赛事动态和作品展示。">
+<meta name="keywords" content="每日赛事,创意比拼,参赛流程,赛程看点,组队对比">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b2a4a'/%3E%3Cpath d='M16 6l3 7h7l-5.7 4.4 2.2 7.1L16 20.2 9.5 24.5l2.2-7.1L6 13h7z' fill='%23f5b942'/%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#16213c;
+  --ink-2:#3a4664;
+  --muted:#6b7691;
+  --line:#e2e6ef;
+  --line-2:#eef1f7;
+  --bg:#f6f7fb;
+  --panel:#ffffff;
+  --brand:#1b2a4a;
+  --brand-2:#2c4270;
+  --accent:#c8862a;
+  --accent-soft:#fdf3e2;
+  --accent-2:#2f7d6d;
+  --accent-2-soft:#e8f4f1;
+  --danger:#b4453c;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(22,33,60,.05),0 6px 18px rgba(22,33,60,.06);
+  --shadow-sm:0 1px 2px rgba(22,33,60,.06);
+  --maxw:1360px;
+  --noti-h:38px;
+  --head-h:66px;
+  --stick:calc(var(--noti-h) + var(--head-h));
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  font-size:15px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img,svg{display:block;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;}
+p{margin:0 0 .9em;}
+ul,ol{margin:0 0 .9em;padding-left:1.2em;}
+li{margin-bottom:.35em;}
+button{font-family:inherit;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+
+/* ===== 吸顶公告条 ===== */
+.notice-bar{
+  position:sticky;top:0;z-index:60;
+  height:var(--noti-h);
+  background:linear-gradient(90deg,#1b2a4a,#2c4270 55%,#3a5285);
+  color:#f4e7cd;
+  font-size:13px;
+  display:flex;align-items:center;
+  overflow:hidden;
+}
+.notice-bar .inner{
+  width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:12px;
+}
+.notice-bar .tag{
+  flex:0 0 auto;background:var(--accent);color:#1b2a4a;
+  font-weight:700;font-size:11px;padding:2px 8px;border-radius:99px;letter-spacing:.5px;
+}
+.notice-bar .txt{
+  flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.notice-bar .txt b{color:#fff;}
+.notice-bar .more{flex:0 0 auto;color:#f5b942;font-size:12px;font-weight:600;border-bottom:1px dashed rgba(245,185,66,.5);}
+
+/* ===== 吸顶页头 ===== */
+.site-head{
+  position:sticky;top:var(--noti-h);z-index:55;
+  height:var(--head-h);
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-sm);
+}
+.site-head .inner{
+  max-width:var(--maxw);margin:0 auto;height:100%;padding:0 20px;
+  display:flex;align-items:center;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.brand-mark{width:36px;height:36px;flex:0 0 auto;}
+.brand-text{font-size:19px;font-weight:800;letter-spacing:.2px;color:var(--brand);white-space:nowrap;}
+.head-nav{display:flex;gap:4px;flex:1 1 auto;overflow:hidden;}
+.head-nav a{
+  font-size:14px;color:var(--ink-2);padding:6px 10px;border-radius:8px;white-space:nowrap;
+}
+.head-nav a:hover{background:var(--line-2);color:var(--brand);}
+.head-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.search-box{
+  display:flex;align-items:center;gap:6px;
+  background:var(--line-2);border:1px solid var(--line);
+  border-radius:99px;padding:4px 6px 4px 12px;width:210px;
+}
+.search-box input{
+  border:0;background:transparent;outline:none;font-size:13px;width:100%;color:var(--ink);
+}
+.search-box button{
+  border:0;background:var(--brand);color:#fff;border-radius:99px;
+  font-size:12px;padding:4px 12px;cursor:pointer;
+}
+.search-box button:hover{background:var(--brand-2);}
+.btn-ghost{
+  font-size:13px;color:var(--brand);border:1px solid var(--line);
+  padding:6px 12px;border-radius:8px;background:#fff;cursor:pointer;
+}
+.btn-ghost:hover{border-color:var(--brand);}
+.menu-btn{display:none;}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:
+    radial-gradient(900px 320px at 82% -40%,rgba(200,134,42,.20),transparent 70%),
+    radial-gradient(700px 300px at 10% 0%,rgba(47,125,109,.14),transparent 65%),
+    linear-gradient(180deg,#fbfcff,#f1f3fa);
+  border-bottom:1px solid var(--line);
+}
+.hero .inner{
+  max-width:var(--maxw);margin:0 auto;padding:34px 20px 38px;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:center;
+}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:1px;color:var(--accent);
+  background:var(--accent-soft);border:1px solid #f2ddb8;
+  padding:4px 12px;border-radius:99px;margin-bottom:14px;
+}
+.hero h1{
+  font-size:clamp(28px,3.6vw,44px);
+  letter-spacing:-.5px;color:var(--brand);
+}
+.hero .lead{
+  margin-top:14px;font-size:15.5px;color:var(--ink-2);max-width:40em;
+}
+.hero .lead strong{color:var(--brand);}
+.hero-points{
+  display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px;padding:0;list-style:none;
+}
+.hero-points li{
+  margin:0;font-size:13px;color:var(--ink-2);
+  background:#fff;border:1px solid var(--line);border-radius:99px;padding:5px 13px;
+  box-shadow:var(--shadow-sm);
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:14px;font-weight:600;padding:10px 20px;border-radius:10px;
+  border:1px solid transparent;cursor:pointer;transition:.15s;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(27,42,74,.18);}
+.btn-primary:hover{background:var(--brand-2);}
+.btn-line{background:#fff;color:var(--brand);border-color:var(--line);}
+.btn-line:hover{border-color:var(--brand);}
+.hero-visual{
+  position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;
+  box-shadow:var(--shadow);padding:18px;
+}
+.hero-visual .vp-head{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;color:var(--muted);margin-bottom:12px;
+}
+.hero-visual .vp-head b{color:var(--brand);font-size:13px;}
+.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-items:end;}
+.podium .col{
+  background:var(--line-2);border-radius:10px 10px 6px 6px;padding:10px 8px;text-align:center;
+}
+.podium .col:nth-child(1){height:88px;background:#eef1f7;}
+.podium .col:nth-child(2){height:118px;background:linear-gradient(180deg,#fdf3e2,#f8e3bd);}
+.podium .col:nth-child(3){height:72px;background:#e8f4f1;}
+.podium .col span{display:block;font-size:11px;color:var(--muted);}
+.podium .col b{display:block;font-size:13px;color:var(--brand);margin-top:4px;}
+.vp-lines{margin-top:14px;display:grid;gap:6px;}
+.vp-lines div{
+  height:9px;border-radius:99px;background:var(--line-2);
+}
+.vp-lines div:nth-child(1){width:92%;}
+.vp-lines div:nth-child(2){width:74%;background:#f0f2f8;}
+.vp-lines div:nth-child(3){width:84%;}
+.vp-badge{
+  position:absolute;right:-8px;top:-10px;background:var(--accent);color:#241a05;
+  font-size:11px;font-weight:800;padding:5px 11px;border-radius:99px;
+  box-shadow:0 6px 14px rgba(200,134,42,.35);
+}
+
+/* ===== 主布局 ===== */
+.layout{
+  max-width:var(--maxw);margin:0 auto;padding:26px 20px 10px;
+  display:grid;grid-template-columns:184px minmax(0,1fr) 248px;gap:24px;align-items:start;
+}
+aside{position:sticky;top:calc(var(--stick) + 16px);}
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);padding:14px;margin-bottom:16px;
+}
+.side-title{
+  font-size:12px;font-weight:800;letter-spacing:1.2px;color:var(--muted);
+  text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:6px;
+}
+.side-title::before{content:"";width:3px;height:12px;background:var(--accent);border-radius:2px;}
+.side-nav{list-style:none;margin:0;padding:0;}
+.side-nav li{margin:0 0 2px;}
+.side-nav a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  font-size:13.5px;color:var(--ink-2);padding:6px 8px;border-radius:7px;
+}
+.side-nav a:hover{background:var(--line-2);color:var(--brand);}
+.side-nav a .n{font-size:11px;color:var(--muted);}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px;}
+.tag-cloud a{
+  font-size:12px;color:var(--ink-2);background:var(--line-2);
+  border:1px solid transparent;border-radius:99px;padding:3px 10px;
+}
+.tag-cloud a:hover{background:var(--accent-soft);color:#8a5a12;border-color:#f2ddb8;}
+
+/* ===== 中栏通用 ===== */
+main{min-width:0;}
+.section{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);padding:22px 24px;margin-bottom:20px;
+  scroll-margin-top:calc(var(--stick) + 16px);
+}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px;flex-wrap:wrap;}
+.sec-head h2{
+  font-size:20px;color:var(--brand);display:flex;align-items:center;gap:10px;
+}
+.sec-head h2::before{
+  content:"";width:5px;height:20px;border-radius:3px;
+  background:linear-gradient(180deg,var(--accent),#e6b463);
+}
+.sec-head .sub{font-size:13px;color:var(--muted);margin-top:2px;}
+.sec-head .more-link{font-size:13px;color:var(--brand);font-weight:600;border-bottom:1px solid var(--line);}
+.sec-head .more-link:hover{border-color:var(--brand);}
+.sec-intro{font-size:14px;color:var(--ink-2);margin:-4px 0 16px;}
+
+/* 内容简介 */
+.intro-body{font-size:14.6px;color:var(--ink-2);}
+.intro-body p{margin-bottom:.85em;}
+.intro-body strong{color:var(--brand);}
+.intro-facts{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;
+}
+.intro-facts div{
+  background:var(--line-2);border-radius:var(--radius-sm);padding:10px 12px;
+}
+.intro-facts b{display:block;font-size:16px;color:var(--brand);}
+.intro-facts span{font-size:12px;color:var(--muted);}
+
+/* 卡片网格 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;
+  background:#fff;display:flex;flex-direction:column;transition:.15s;
+}
+.card:hover{border-color:#c6cfe3;box-shadow:var(--shadow);transform:translateY(-1px);}
+.card .thumb{
+  height:78px;display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:800;color:#fff;letter-spacing:1px;
+}
+.card .body{padding:11px 12px 12px;display:flex;flex-direction:column;flex:1 1 auto;}
+.card h3{font-size:14.5px;color:var(--brand);margin-bottom:6px;}
+.card .desc{font-size:12.5px;color:var(--ink-2);line-height:1.6;flex:1 1 auto;margin-bottom:8px;}
+.tagrow{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:8px;}
+.tag{
+  font-size:11px;color:var(--ink-2);background:var(--line-2);
+  border-radius:99px;padding:2px 8px;
+}
+.tag.hot{background:var(--accent-soft);color:#8a5a12;}
+.tag.new{background:var(--accent-2-soft);color:#1e5c4f;}
+.card .meta{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:7px;
+}
+.card .meta b{color:var(--accent);font-weight:700;}
+
+/* 动态列表 */
+.updates{list-style:none;margin:0;padding:0;}
+.updates li{
+  display:grid;grid-template-columns:88px minmax(0,1fr);gap:14px;
+  padding:11px 0;border-bottom:1px dashed var(--line);margin:0;
+}
+.updates li:last-child{border-bottom:0;padding-bottom:0;}
+.updates .time{font-size:12px;color:var(--muted);padding-top:2px;}
+.updates .u-title{font-size:14px;font-weight:600;color:var(--brand);margin-bottom:2px;}
+.updates .u-title:hover{color:var(--accent);}
+.updates .u-desc{font-size:12.8px;color:var(--ink-2);margin:0;}
+.updates .u-desc .tag{margin-left:6px;}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.cat{
+  display:block;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:12px;background:#fcfdff;transition:.15s;
+}
+.cat:hover{border-color:var(--brand);background:#fff;box-shadow:var(--shadow-sm);}
+.cat b{display:block;font-size:14px;color:var(--brand);margin-bottom:3px;}
+.cat span{font-size:12px;color:var(--muted);}
+
+/* 深度解析 */
+.deep h3{
+  font-size:16px;color:var(--brand);margin:20px 0 8px;
+  padding-left:11px;border-left:3px solid var(--accent);
+}
+.deep h3:first-child{margin-top:0;}
+.deep p{font-size:14.6px;color:var(--ink-2);margin-bottom:.8em;}
+.deep ul{font-size:14.4px;color:var(--ink-2);}
+.deep li b{color:var(--brand);}
+.compare-table{
+  width:100%;border-collapse:collapse;font-size:13.4px;margin:12px 0;
+}
+.compare-table th,.compare-table td{
+  border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;
+}
+.compare-table th{background:var(--line-2);color:var(--brand);font-weight:700;}
+.compare-table td{color:var(--ink-2);}
+.pull-quote{
+  background:var(--accent-soft);border-left:4px solid var(--accent);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:12px 16px;font-size:14px;color:#6b4a12;margin:14px 0;
+}
+
+/* 体验指南 */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;}
+.steps li{
+  counter-increment:s;position:relative;padding:0 0 14px 42px;margin:0;
+  border-left:2px dashed var(--line);margin-left:14px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0;}
+.steps li::before{
+  content:counter(s);position:absolute;left:-15px;top:0;
+  width:28px;height:28px;border-radius:50%;background:var(--brand);color:#fff;
+  font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.steps b{display:block;font-size:14.5px;color:var(--brand);margin-bottom:2px;}
+.steps span{font-size:13.4px;color:var(--ink-2);}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  background:#fcfdff;margin-bottom:8px;overflow:hidden;
+}
+.faq details[open]{background:#fff;border-color:#cfd8e8;box-shadow:var(--shadow-sm);}
+.faq summary{
+  cursor:pointer;padding:11px 14px;font-size:14.2px;font-weight:600;color:var(--brand);
+  list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";font-size:17px;color:var(--accent);font-weight:400;line-height:1;}
+.faq details[open] summary::after{content:"–";}
+.faq .ans{padding:0 14px 13px;font-size:13.6px;color:var(--ink-2);}
+.faq .ans p:last-child{margin-bottom:0;}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+.comment{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 12px;background:#fcfdff;
+}
+.comment .ch{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+.avatar{
+  width:26px;height:26px;border-radius:50%;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;color:#fff;
+}
+.comment .nick{font-size:13px;font-weight:600;color:var(--brand);}
+.comment .stamp{font-size:11px;color:var(--muted);margin-left:auto;}
+.comment p{font-size:13px;color:var(--ink-2);margin:0;}
+
+/* 资讯 */
+.news-list{list-style:none;margin:0;padding:0;}
+.news-list li{
+  padding:11px 0;border-bottom:1px dashed var(--line);margin:0;
+}
+.news-list li:last-child{border-bottom:0;padding-bottom:0;}
+.news-list .nh{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;}
+.news-list .nh a{font-size:14.5px;font-weight:600;color:var(--brand);}
+.news-list .nh a:hover{color:var(--accent);}
+.news-list time{font-size:12px;color:var(--muted);}
+.news-list p{font-size:13px;color:var(--ink-2);margin:3px 0 0;}
+
+/* 相关推荐 */
+.rec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
+.rec{
+  display:flex;align-items:center;gap:10px;
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:9px 11px;background:#fcfdff;font-size:13.5px;color:var(--ink-2);
+  transition:.15s;
+}
+.rec:hover{border-color:#c6cfe3;background:#fff;color:var(--brand);}
+.rec .idx{
+  flex:0 0 auto;width:20px;height:20px;border-radius:6px;background:var(--line-2);
+  color:var(--muted);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.rec:nth-child(-n+3) .idx{background:var(--accent-soft);color:#8a5a12;}
+
+/* 趋势观察 */
+.trend-list{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+.trend-list li{
+  margin:0;padding:12px 14px;border-radius:var(--radius-sm);
+  background:linear-gradient(90deg,#fbfcff,#f4f6fc);border:1px solid var(--line);
+}
+.trend-list b{display:block;font-size:14px;color:var(--brand);margin-bottom:3px;}
+.trend-list span{font-size:13.2px;color:var(--ink-2);}
+.trend-list .bar{
+  height:5px;border-radius:99px;background:var(--line);margin-top:8px;overflow:hidden;
+}
+.trend-list .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),#e6b463);}
+
+/* 右栏 */
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:r;}
+.rank-list li{
+  counter-increment:r;display:flex;gap:9px;align-items:flex-start;
+  padding:7px 0;border-bottom:1px dashed var(--line);margin:0;font-size:13.2px;
+}
+.rank-list li:last-child{border-bottom:0;padding-bottom:0;}
+.rank-list li::before{
+  content:counter(r);flex:0 0 auto;width:18px;height:18px;border-radius:5px;
+  background:var(--line-2);color:var(--muted);font-size:11px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.rank-list li:nth-child(-n+3)::before{background:var(--accent);color:#241a05;}
+.rank-list a{color:var(--ink-2);}
+.rank-list a:hover{color:var(--brand);}
+.rank-list .r-meta{display:block;font-size:11px;color:var(--muted);}
+.toc{list-style:none;margin:0;padding:0;font-size:13px;}
+.toc li{margin:0 0 1px;}
+.toc a{display:block;padding:4px 8px;border-radius:6px;color:var(--ink-2);border-left:2px solid transparent;}
+.toc a:hover{background:var(--line-2);color:var(--brand);border-left-color:var(--accent);}
+.read-next{display:grid;gap:7px;}
+.read-next a{
+  display:block;font-size:13px;color:var(--ink-2);padding:7px 9px;
+  border:1px solid var(--line);border-radius:7px;background:#fcfdff;
+}
+.read-next a:hover{border-color:var(--brand);color:var(--brand);background:#fff;}
+.read-next a span{display:block;font-size:11px;color:var(--muted);margin-top:1px;}
+
+/* 搜索过滤 */
+.filter-note{display:none;font-size:13px;color:var(--ink-2);background:var(--accent-soft);border:1px solid #f2ddb8;border-radius:8px;padding:8px 12px;margin-bottom:12px;}
+.filter-note.show{display:block;}
+.card.is-hidden,.updates li.is-hidden,.rec.is-hidden{display:none!important;}
+.empty-tip{display:none;font-size:13.5px;color:var(--muted);padding:14px;border:1px dashed var(--line);border-radius:var(--radius-sm);text-align:center;}
+
+/* 页尾 */
+.site-foot{
+  margin-top:26px;background:#141e33;color:#b9c3d6;font-size:13px;
+}
+.site-foot .inner{
+  max-width:var(--maxw);margin:0 auto;padding:34px 20px 20px;
+}
+.foot-top{display:grid;grid-template-columns:1.3fr 2fr;gap:32px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.1);}
+.foot-brand .brand-text{color:#fff;font-size:18px;}
+.foot-brand p{margin-top:10px;font-size:13px;color:#93a0b8;max-width:30em;}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.foot-cols h4{font-size:13px;color:#fff;margin-bottom:8px;letter-spacing:.5px;}
+.foot-cols ul{list-style:none;margin:0;padding:0;}
+.foot-cols li{margin-bottom:5px;}
+.foot-cols a{color:#93a0b8;font-size:12.6px;}
+.foot-cols a:hover{color:#f5b942;}
+.foot-bottom{padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:#7d8aa3;}
+.foot-bottom .example-note{color:#7d8aa3;}
+
+/* ===== 响应式 ===== */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr);}
+  .right-col{display:none;}
+  .card-grid{grid-template-columns:repeat(2,1fr);}
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+}
+@media (max-width:960px){
+  .head-nav{display:none;}
+  .hero .inner{grid-template-columns:1fr;gap:24px;}
+  .hero-visual{display:none;}
+  .layout{grid-template-columns:1fr;padding:18px 16px 10px;}
+  .left-col{position:static;display:block;}
+  .left-col .side-card{margin-bottom:12px;}
+  .left-col .side-nav{
+    display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;
+    -webkit-overflow-scrolling:touch;
+  }
+  .left-col .side-nav li{flex:0 0 auto;margin:0;}
+  .left-col .side-nav a{white-space:nowrap;background:var(--line-2);padding:6px 12px;border-radius:99px;}
+  .comments{grid-template-columns:1fr;}
+  .foot-top{grid-template-columns:1fr;gap:22px;}
+  .search-box{width:150px;}
+}
+@media (max-width:720px){
+  .notice-bar .more{display:none;}
+  .site-head .inner{gap:10px;padding:0 14px;}
+  .brand-text{font-size:16px;}
+  .brand-mark{width:30px;height:30px;}
+  .head-actions .btn-ghost{display:none;}
+  .search-box{width:130px;}
+  .hero .inner{padding:24px 16px 26px;}
+  .hero .lead{font-size:14.5px;}
+  .section{padding:18px 16px;}
+  .card-grid{grid-template-columns:1fr;}
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .rec-grid{grid-template-columns:1fr;}
+  .intro-facts{grid-template-columns:1fr;}
+  .updates li{grid-template-columns:1fr;gap:2px;}
+  .compare-table{font-size:12.6px;}
+  .compare-table th,.compare-table td{padding:7px 8px;}
+  .foot-cols{grid-template-columns:1fr 1fr;}
+  .hero-cta .btn{flex:1 1 auto;justify-content:center;}
+}
+@media (max-width:400px){
+  .search-box{width:112px;}
+  .brand-text{font-size:15px;}
+  .sec-head h2{font-size:18px;}
+}
+</style>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="notice-bar" role="region" aria-label="站点公告">
+  <div class="inner">
+    <span class="tag">公告</span>
+    <span class="txt"><b>本周赛事日程已更新</b>：新增三场创意组比稿，报名截止至本周五 20:00。</span>
+    <a class="more" href="/#updates">查看动态</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head">
+  <div class="inner">
+    <a class="brand" href="/#top" aria-label="每日大赛mrds平台 首页">
+      <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+        <rect width="36" height="36" rx="9" fill="#1b2a4a"/>
+        <path d="M18 7l2.9 6.8H28l-5.6 4.3 2.1 6.9L18 21.2 11.5 25l2.1-6.9L8 13.8h7.1z" fill="#f5b942"/>
+        <circle cx="18" cy="18" r="13.5" fill="none" stroke="#f5b942" stroke-opacity=".28" stroke-width="1.4"/>
+      </svg>
+      <span class="brand-text">每日大赛mrds平台</span>
+    </a>
+    <nav class="head-nav" aria-label="主题导航">
+      <a href="/#hot">热门赛事</a>
+      <a href="/#updates">赛程动态</a>
+      <a href="/#cats">赛事分类</a>
+      <a href="/#deep">赛事解析</a>
+      <a href="/#guide">参赛指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#news">赛事资讯</a>
+    </nav>
+    <div class="head-actions">
+      <form class="search-box" role="search" id="searchForm">
+        <input type="search" id="searchInput" placeholder="搜赛事 / 类型 / 看点" aria-label="站内搜索">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="btn-ghost" type="button" onclick="document.getElementById('guide').scrollIntoView()">参赛流程</button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="inner">
+    <div>
+      <span class="kicker">每日开赛 · 创意与竞技并行</span>
+      <h1>每日大赛mrds平台</h1>
+      <p class="lead">每天都有新赛题、新作品、新排名的赛事内容门户。这里汇总<strong>每日赛事日程、参赛作品展示、评审规则说明、组队选择对比</strong>，帮助参赛者判断赛题难度与准备节奏，也方便观赛用户快速找到值得看的作品。</p>
+      <ul class="hero-points">
+        <li>每日赛题更新</li>
+        <li>作品实时展示</li>
+        <li>评审维度透明</li>
+        <li>组队与个人赛对比</li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#hot">看今日热门赛事</a>
+        <a class="btn btn-line" href="/#guide">参赛流程说明</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <span class="vp-badge">今日开赛</span>
+      <div class="vp-head"><b>今日赛区进度</b><span>示例展示</span></div>
+      <div class="podium">
+        <div class="col"><span>创意组</span><b>进行中</b></div>
+        <div class="col"><span>综合组</span><b>冲刺期</b></div>
+        <div class="col"><span>新人组</span><b>报名中</b></div>
+      </div>
+      <div class="vp-lines"><div></div><div></div><div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏主内容区 -->
+<div class="layout">
+
+  <!-- 左栏 -->
+  <aside class="left-col" aria-label="频道与分类导航">
+    <div class="side-card">
+      <div class="side-title">频道导航</div>
+      <ul class="side-nav">
+        <li><a href="/#intro">平台简介</a></li>
+        <li><a href="/#hot">热门赛事</a></li>
+        <li><a href="/#updates">赛程动态</a></li>
+        <li><a href="/#cats">赛事分类</a></li>
+        <li><a href="/#deep">赛事深度解析</a></li>
+        <li><a href="/#guide">参赛体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">选手评论</a></li>
+        <li><a href="/#news">赛事资讯</a></li>
+        <li><a href="/#rec">相关推荐</a></li>
+        <li><a href="/#trend">趋势观察</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门标签</div>
+      <div class="tag-cloud">
+        <a href="/#cats">创意组</a>
+        <a href="/#cats">综合竞技</a>
+        <a href="/#cats">新人赛</a>
+        <a href="/#cats">限时命题</a>
+        <a href="/#cats">团队协作</a>
+        <a href="/#cats">短周期赛</a>
+        <a href="/#cats">评审打分</a>
+        <a href="/#cats">作品展示</a>
+        <a href="/#cats">晋级机制</a>
+      </div>
+    </div>
+    <div class="side-card">
+      <div class="side-title">更新节奏</div>
+      <ul class="side-nav">
+        <li><a href="/#updates">每日赛题 <span class="n">20:00</span></a></li>
+        <li><a href="/#updates">排名刷新 <span class="n">23:00</span></a></li>
+        <li><a href="/#news">赛事周报 <span class="n">周一</span></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- 中栏 -->
+  <main>
+
+    <!-- 1. 内容简介 -->
+    <section class="section" id="intro">
+      <div class="sec-head">
+        <div>
+          <h2>平台简介：每天都能参与的赛事内容</h2>
+          <div class="sub">赛事类型、参与方式与内容节奏的整体说明</div>
+        </div>
+      </div>
+      <div class="intro-body">
+        <p><strong>每日大赛mrds平台</strong>是一个以“每日开赛”为核心的赛事内容门户，围绕创意比拼、综合竞技和新人练习三类赛事，提供赛题说明、作品展示、评审维度与赛程进度。它适合想找稳定练习节奏的参赛者、想观察作品水平的观赛用户，以及正在比较“个人赛还是团队赛更适合自己”的选择困难者。平台内容按天更新，当天赛题、当日提交作品与阶段排名在同一页面内呈现，减少来回跳转。</p>
+        <p>从内容结构看，这里不是单一的比分板，而是把赛事拆成可阅读的信息：赛题考什么、评审看哪些维度、作品完成度如何、同类赛题之间有什么区别。对于刚开始接触每日赛事的用户，可以先看参赛流程与常见问题，再回到热门赛事区挑一场节奏合适的比赛；对于有经验的选手，赛事深度解析与趋势观察更接近他们需要的信息，比如限时命题的常见失分点、团队赛中分工比例对评分的影响。</p>
+        <p>平台内容主要覆盖四类需求：一是查今天的赛题与截止时间；二是看同类赛事之间的难度与评审差异；三是找适合自己水平的赛事方向；四是了解作品展示与晋级机制。每类需求都对应独立板块，避免在一个列表里混杂赛程、作品和规则说明。赛事分类按创意组、综合竞技、新人赛、限时命题、团队协作等方向划分，用户可以直接进入对应类别，也可以使用站内搜索按赛事名称或标签查找。</p>
+        <div class="intro-facts">
+          <div><b>每日赛题</b><span>当天 20:00 前更新赛题与提交要求</span></div>
+          <div><b>三类赛区</b><span>创意组 / 综合竞技 / 新人练习</span></div>
+          <div><b>评审四维</b><span>完成度、创意、执行、表达</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 热门内容推荐 -->
+    <section class="section" id="hot">
+      <div class="sec-head">
+        <div>
+          <h2>今日热门赛事推荐</h2>
+          <div class="sub">按讨论度与提交量排序的当日赛事</div>
+        </div>
+        <a class="more-link" href="/#updates">看全部赛程</a>
+      </div>
+      <p class="sec-intro">以下赛事为当日讨论度较高的场次，涵盖限时命题、团队协作与新人练习三类方向，可按标签快速判断是否适合自己的准备时间。</p>
+      <div class="filter-note" id="filterNote"></div>
+      <div class="card-grid" id="hotGrid">
+
+        <article class="card" data-keywords="限时命题 创意组 短周期赛 今晚截止">
+          <div class="thumb" style="background:linear-gradient(135deg,#2c4270,#1b2a4a)">限时命题</div>
+          <div class="body">
+            <h3>限时命题·城市一角创意赛</h3>
+            <div class="tagrow"><span class="tag hot">今晚截止</span><span class="tag">创意组</span><span class="tag">短周期赛</span></div>
+            <p class="desc">围绕“城市一角”做单幅创意表达，评审重点看选题角度与完成度，适合有一定构思速度的参赛者。</p>
+            <div class="meta"><span>提交 <b>1,286</b> 份</span><span>讨论热度 ★★★★</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="团队协作 综合竞技 分工 组队">
+          <div class="thumb" style="background:linear-gradient(135deg,#2f7d6d,#1f5a4e)">团队协作</div>
+          <div class="body">
+            <h3>团队协作赛·三人分工挑战</h3>
+            <div class="tagrow"><span class="tag new">组队中</span><span class="tag">综合竞技</span><span class="tag">团队协作</span></div>
+            <p class="desc">三人一组完成同一命题的三个部分，评分按协作连贯性加权，适合想练配合的固定小队。</p>
+            <div class="meta"><span>队伍 <b>318</b> 支</span><span>讨论热度 ★★★★</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="新人赛 入门 低门槛 练习">
+          <div class="thumb" style="background:linear-gradient(135deg,#c8862a,#a86c1c)">新人练习</div>
+          <div class="body">
+            <h3>新人练习赛·基础题七日连做</h3>
+            <div class="tagrow"><span class="tag hot">推荐入门</span><span class="tag">新人赛</span><span class="tag">七日连做</span></div>
+            <p class="desc">连续七天发布基础题，难度平缓上升，适合第一次参加每日赛事、想先建立节奏的用户。</p>
+            <div class="meta"><span>参与 <b>2,041</b> 人</span><span>讨论热度 ★★★☆</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="评审打分 作品展示 创意组 评分维度">
+          <div class="thumb" style="background:linear-gradient(135deg,#3a5285,#283a63)">评审公开</div>
+          <div class="body">
+            <h3>评审公开场·四维打分演示赛</h3>
+            <div class="tagrow"><span class="tag">评审打分</span><span class="tag">作品展示</span><span class="tag">创意组</span></div>
+            <p class="desc">赛后公开评审打分表，逐项展示完成度、创意、执行、表达四个维度的评分依据。</p>
+            <div class="meta"><span>展示 <b>86</b> 份</span><span>讨论热度 ★★★☆</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="限时命题 综合竞技 难度 晋级">
+          <div class="thumb" style="background:linear-gradient(135deg,#5b4b8a,#41356a)">高难度</div>
+          <div class="body">
+            <h3>综合竞技·高压限时命题赛</h3>
+            <div class="tagrow"><span class="tag">限时命题</span><span class="tag">综合竞技</span><span class="tag">晋级机制</span></div>
+            <p class="desc">两小时命题提交，评分卡直接挂出晋级线，适合已经熟悉流程、想冲排名的选手。</p>
+            <div class="meta"><span>晋级 <b>前 15%</b></span><span>讨论热度 ★★★★☆</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="新人赛 团队协作 轻松 组队">
+          <div class="thumb" style="background:linear-gradient(135deg,#2f7d6d,#236055)">轻量组队</div>
+          <div class="body">
+            <h3>轻量组队赛·双人配合练习</h3>
+            <div class="tagrow"><span class="tag new">随时加入</span><span class="tag">团队协作</span><span class="tag">新人赛</span></div>
+            <p class="desc">两人一组，题目难度控制在基础区间，重点在沟通与分工，适合第一次尝试组队赛。</p>
+            <div class="meta"><span>队伍 <b>452</b> 支</span><span>讨论热度 ★★★☆</span></div>
+          </div>
+        </article>
+
+      </div>
+      <div class="empty-tip" id="hotEmpty">没有找到匹配的赛事，试试“创意组”“新人赛”“团队协作”等关键词。</div>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section class="section" id="updates">
+      <div class="sec-head">
+        <div>
+          <h2>最新赛程与排名动态</h2>
+          <div class="sub">赛题发布、提交截止与排名刷新记录</div>
+        </div>
+      </div>
+      <ul class="updates">
+        <li>
+          <span class="time">今日 20:00</span>
+          <div>
+            <a class="u-title" href="/#hot">限时命题·城市一角创意赛赛题发布</a>
+            <p class="u-desc">赛题要求围绕单幅画面表达城市细节，提交窗口 3 小时。<span class="tag hot">今晚截止</span></p>
+          </div>
+        </li>
+        <li>
+          <span class="time">今日 19:30</span>
+          <div>
+            <a class="u-title" href="/#hot">团队协作赛·三人分工挑战开放组队</a>
+            <p class="u-desc">队伍上限 3 人，允许赛前调整一次分工说明。<span class="tag new">组队中</span></p>
+          </div>
+        </li>
+        <li>
+          <span class="time">今日 18:10</span>
+          <div>
+            <a class="u-title" href="/#updates">综合竞技赛区排名刷新</a>
+            <p class="u-desc">前 15% 晋级线小幅上调，评审对执行维度权重做了说明。</p>
+          </div>
+        </li>
+        <li>
+          <span class="time">今日 16:40</span>
+          <div>
+            <a class="u-title" href="/#deep">评审公开场新增四维打分示例</a>
+            <p class="u-desc">新增 12 份作品的逐项评分表，可用于对照自己的得分结构。</p>
+          </div>
+        </li>
+        <li>
+          <span class="time">今日 14:20</span>
+          <div>
+            <a class="u-title" href="/#hot">新人练习赛·基础题七日连做第三题上线</a>
+            <p class="u-desc">难度较前两题略升，推荐先看往期优秀作品再动笔。<span class="tag">推荐入门</span></p>
+          </div>
+        </li>
+        <li>
+          <span class="time">今日 11:05</span>
+          <div>
+            <a class="u-title" href="/#hot">轻量组队赛·双人配合练习开放随时加入</a>
+            <p class="u-desc">取消固定开赛时间，两人成组即可开始计时。</p>
+          </div>
+        </li>
+        <li>
+          <span class="time">昨日 22:30</span>
+          <div>
+            <a class="u-title" href="/#news">赛事周报：本周命题方向集中在城市与日常</a>
+            <p class="u-desc">整理本周赛题分布与提交量变化，供下周选题参考。</p>
+          </div>
+        </li>
+        <li>
+          <span class="time">昨日 21:15</span>
+          <div>
+            <a class="u-title" href="/#deep">高难度限时命题赛失分点汇总</a>
+            <p class="u-desc">超时提交与表达不完整仍是主要失分原因，完成度权重上调。</p>
+          </div>
+        </li>
+        <li>
+          <span class="time">昨日 17:00</span>
+          <div>
+            <a class="u-title" href="/#cats">赛事分类页新增“短周期赛”入口</a>
+            <p class="u-desc">把两小时以内可完成的赛题集中归类，方便按空闲时间筛选。</p>
+          </div>
+        </li>
+        <li>
+          <span class="time">昨日 10:40</span>
+          <div>
+            <a class="u-title" href="/#guide">参赛流程页补充组队与个人赛差异说明</a>
+            <p class="u-desc">新增分工比例、沟通成本与评分权重的对照内容。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="section" id="cats">
+      <div class="sec-head">
+        <div>
+          <h2>赛事分类入口</h2>
+          <div class="sub">按赛事类型与参与方式快速定位</div>
+        </div>
+      </div>
+      <p class="sec-intro">分类名称对应用户常用的搜索词，点击任一分类可查看该方向下的赛题、作品与规则说明。</p>
+      <div class="cat-grid">
+        <a class="cat" href="/#hot"><b>创意组赛事</b><span>单幅表达与选题角度的比拼</span></a>
+        <a class="cat" href="/#hot"><b>综合竞技赛</b><span>多维度评分，晋级线明确</span></a>
+        <a class="cat" href="/#hot"><b>新人练习赛</b><span>低门槛、节奏平缓的入门方向</span></a>
+        <a class="cat" href="/#hot"><b>限时命题赛</b><span>短时间提交，考验构思速度</span></a>
+        <a class="cat" href="/#hot"><b>团队协作赛</b><span>两人或三人分工完成同一命题</span></a>
+        <a class="cat" href="/#hot"><b>短周期赛</b><span>两小时内可完成，适合碎片时间</span></a>
+        <a class="cat" href="/#deep"><b>评审公开场</b><span>赛后公开逐项打分依据</span></a>
+        <a class="cat" href="/#hot"><b>作品展示区</b><span>按完成度与讨论度展示作品</span></a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析正文 -->
+    <section class="section deep" id="deep">
+      <div class="sec-head">
+        <div>
+          <h2>赛事深度解析：赛题、评审与选择</h2>
+          <div class="sub">从赛题设计到评分逻辑的完整说明</div>
+        </div>
+      </div>
+
+      <h3>每日赛题是怎么设计出来的</h3>
+      <p>每日大赛mrds平台的赛题通常按“一个核心考点 + 一个限制条件”的结构设计。核心考点决定这道题在练什么，限制条件决定它有多难。比如同样是创意组，限制为“单幅画面”和限制为“三张连续画面”，考察的能力完全不同：前者更看选题角度与信息密度，后者更看叙事连贯与节奏分配。</p>
+      <p>赛题发布时一般会同时给出三项信息：命题描述、提交规格与评审侧重。命题描述说明要做什么，提交规格说明交什么形式，评审侧重说明四个维度里哪一项权重更高。参赛者如果只看命题描述就开始做，很容易在提交规格上失分，尤其是画面比例、字数上限、文件命名这类硬性要求。</p>
+      <ul>
+        <li><b>命题描述</b>：一句话说明主题，通常带一个具体场景或限制。</li>
+        <li><b>提交规格</b>：形式、尺寸、数量与截止时间，属于硬性条件。</li>
+        <li><b>评审侧重</b>：说明完成度、创意、执行、表达四项中哪项权重上调。</li>
+      </ul>
+
+      <h3>四个评审维度分别看什么</h3>
+      <p>平台统一使用四个维度打分，每个维度按 0—10 分计，再按赛题侧重的权重折算。理解每个维度看什么，比反复练习同一类题更有效，因为它能解释“为什么我觉得不错但分数不高”。</p>
+      <table class="compare-table">
+        <thead>
+          <tr><th>维度</th><th>主要看什么</th><th>常见失分原因</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>完成度</td><td>是否完整回应命题，硬性规格是否满足</td><td>漏交要求项、超出截止时间</td></tr>
+          <tr><td>创意</td><td>选题角度是否新鲜，是否避开常见套路</td><td>与往期高分手法的重复度过高</td></tr>
+          <tr><td>执行</td><td>细节处理是否稳定，整体是否统一</td><td>局部精细、整体松散</td></tr>
+          <tr><td>表达</td><td>信息传达是否清楚，重点是否突出</td><td>元素过多，主次不清</td></tr>
+        </tbody>
+      </table>
+      <div class="pull-quote">在限时命题中，完成度往往比创意更容易拉开差距：先把硬性要求全部做到，再谈角度新鲜。</div>
+
+      <h3>个人赛和团队赛怎么选</h3>
+      <p>这是参赛者问得最多的比较问题。个人赛的优势在于决策链短、风格统一，适合构思速度快、喜欢独立把控节奏的人；团队赛的优势在于可以拆分子任务，适合命题体量大、需要同时处理多个部分的赛题。但团队赛的沟通成本也不低，分工不清时容易出现“都在做、都不完整”的情况。</p>
+      <p>一个实用的判断方法是看赛题的组成部分数量。如果一道题可以自然拆成三个相对独立的部分，团队赛的效率优势明显；如果三个部分高度耦合、需要反复对照，那么一个人做反而更快。对于第一次参加每日大赛mrds平台赛事的人，建议先用新人练习赛跑通流程，再决定是否进入团队赛区。</p>
+
+      <h3>限时命题的常见节奏安排</h3>
+      <p>两小时左右的限时命题，比较稳妥的节奏是：前 15 分钟读题与拆解要求，中间 70 分钟集中产出，最后 20 分钟对照提交规格逐项检查，留 15 分钟缓冲。很多人把时间全用在产出上，最后因为规格不符或提交失败而失分，这类失分完全可以通过固定检查清单避免。</p>
+      <ul>
+        <li>读题阶段把硬性要求逐条写下来，避免中途遗忘。</li>
+        <li>产出阶段先完成整体，再补细节，防止局部过度打磨。</li>
+        <li>检查阶段按清单逐项核对，尤其是尺寸、数量与命名。</li>
+        <li>提交后保留一份本地版本，便于赛后复盘对照评分表。</li>
+      </ul>
+
+      <h3>排名与晋级机制怎么理解</h3>
+      <p>综合竞技赛区采用百分比晋级线，而不是固定名次。这意味着晋级难度会随当日参赛人数变化：参赛人数多时，同样的分数可能排在更后。理解这一点后，就不必因为某天排名波动而怀疑自己的水平，更值得关注的是自己在四个维度上的得分结构是否稳定。</p>
+      <p>平台会在赛后公开部分作品的评分表，这些评分表比排名更有参考价值。对比自己与高分的分项差距，能看出问题集中在创意还是执行，从而决定下一阶段练什么。这也是每日大赛mrds平台把评审公开场单独列出的原因：分数背后的依据比分数本身更值得读。</p>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section class="section" id="guide">
+      <div class="sec-head">
+        <div>
+          <h2>参赛体验指南</h2>
+          <div class="sub">从找赛题到赛后复盘的完整路径</div>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <b>先确定自己的可用时间</b>
+          <span>每天能投入一小时和能投入三小时，适合的赛题完全不同。短周期赛适合碎片时间，综合竞技赛需要留出完整时段。</span>
+        </li>
+        <li>
+          <b>用分类或搜索定位赛题</b>
+          <span>进入赛事分类页按创意组、新人赛、限时命题等方向筛选，或在页头搜索框输入赛事名称与标签关键词。</span>
+        </li>
+        <li>
+          <b>读清提交规格再动手</b>
+          <span>命题描述之外，重点看形式、尺寸、数量与截止时间。硬性规格不满足时，创意分再高也难以挽回完成度得分。</span>
+        </li>
+        <li>
+          <b>判断个人参赛还是组队</b>
+          <span>赛题可自然拆分且体量偏大时考虑组队；高度耦合、需要统一风格时个人参赛更稳。首次参赛建议先跑新人练习赛。</span>
+        </li>
+        <li>
+          <b>赛后对照评分表复盘</b>
+          <span>在评审公开场查看同类作品的逐项得分，找出自己失分集中的维度，作为下一场赛题的练习重点。</span>
+        </li>
+        <li>
+          <b>建立固定的追更节奏</b>
+          <span>赛题每日 20:00 前更新，排名当晚刷新。固定在同一时间查看动态，比零散刷新更容易保持参赛节奏。</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="section faq" id="faq">
+      <div class="sec-head">
+        <div>
+          <h2>常见问题</h2>
+          <div class="sub">参赛者最常问的六个问题</div>
+        </div>
+      </div>
+
+      <details open>
+        <summary>每日大赛mrds平台的赛事适合什么人参加？</summary>
+        <div class="ans"><p>适合想保持稳定练习节奏的人。新人可以从新人练习赛开始，难度平缓、题目基础；有一定经验的人更适合创意组与限时命题赛，重点练构思速度与完成度；喜欢配合的可以选择团队协作赛，但建议先确认队友的可用时间是否一致。</p></div>
+      </details>
+
+      <details>
+        <summary>每日赛题一般什么时候更新，提交截止到几点？</summary>
+        <div class="ans"><p>赛题通常在当天 20:00 前发布，提交窗口按赛题类型不同，短周期赛多为 2—3 小时，综合竞技赛会留出更长时间。具体截止时间写在每道赛题的提交规格里，建议读题时先记下截止时间再开始构思。</p></div>
+      </details>
+
+      <details>
+        <summary>创意组和综合竞技赛有什么区别，该怎么选？</summary>
+        <div class="ans"><p>创意组通常围绕单一命题做表达，评分更看选题角度与信息密度；综合竞技赛的命题体量更大，评分维度更均衡，还带明确的晋级线。想练角度和新意选创意组，想练整体完成度与时间管理选综合竞技赛。</p></div>
+      </details>
+
+      <details>
+        <summary>团队赛一般几个人一组，分工怎么安排比较合理？</summary>
+        <div class="ans"><p>常见是两人或三人一组。三人组比较稳妥的分工是：一人负责整体结构与命题拆解，一人负责主要产出，一人负责细节检查与提交规格核对。分工说明要在开赛前定好，中途频繁调整反而会拖慢进度。</p></div>
+      </details>
+
+      <details>
+        <summary>评审打分主要看哪些维度，完成度真的很重要吗？</summary>
+        <div class="ans"><p>评审按完成度、创意、执行、表达四个维度打分，再按赛题侧重折算权重。完成度的重要性在限时命题中尤其明显，因为它直接对应硬性要求是否满足。很多失分不是创意不够，而是漏交要求项或超出截止时间。</p></div>
+      </details>
+
+      <details>
+        <summary>没进晋级线还有必要继续参加吗？</summary>
+        <div class="ans"><p>有必要，但要换一种看法。晋级线按百分比划定，会随当日参赛人数变化，单次未晋级不代表水平下降。更值得做的是对照评审公开场的评分表，看自己在哪个维度稳定偏低，把下一阶段的练习集中在那里。</p></div>
+      </details>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="section" id="comments">
+      <div class="sec-head">
+        <div>
+          <h2>参赛者与观赛用户评论</h2>
+          <div class="sub">来自不同参赛方向的真实语气反馈</div>
+        </div>
+      </div>
+      <div class="comments">
+
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#2c4270">林</span><span class="nick">林间小径</span><span class="stamp">今天 21:04</span></div>
+          <p>新人练习赛的节奏对我这种上班族挺友好，一天一题不会压得太紧。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#c8862a">周</span><span class="nick">周末画手</span><span class="stamp">今天 20:47</span></div>
+          <p>限时命题今晚这道题看着简单，实际做起来很容易在细节上超时。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#2f7d6d">阿</span><span class="nick">阿岚</span><span class="stamp">今天 20:12</span></div>
+          <p>三人组队赛的分工说明最好提前写好，我们上次临时改分工，结果整体乱了。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#5b4b8a">沉</span><span class="nick">沉舟</span><span class="stamp">今天 19:38</span></div>
+          <p>评审公开场挺有参考价值，能直接看出自己差在创意还是执行。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#b4453c">南</span><span class="nick">南桥旧事</span><span class="stamp">今天 18:55</span></div>
+          <p>排名刷新之后掉了几位，看了下评分表，确实是表达分偏低，认了。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#3a5285">一</span><span class="nick">一只橘</span><span class="stamp">今天 18:20</span></div>
+          <p>分类页新增的短周期赛入口很实用，午休时间也能参加一场。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#2f7d6d">白</span><span class="nick">白露未晞</span><span class="stamp">今天 17:41</span></div>
+          <p>综合竞技赛的晋级线每天不太一样，刚开始还挺不适应，现在习惯了。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#c8862a">禾</span><span class="nick">禾木</span><span class="stamp">今天 16:58</span></div>
+          <p>新人练习赛第三题难度比前两题高一点，建议先看往期高分作品。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#5b4b8a">青</span><span class="nick">青柠不酸</span><span class="stamp">今天 15:33</span></div>
+          <p>双人配合练习可以随时加入，这个设计挺适合时间不固定的两个人。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#b4453c">顾</span><span class="nick">顾言</span><span class="stamp">今天 14:50</span></div>
+          <p>说句中肯的，创意组有些作品角度不错，但完成度确实差一口气。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#3a5285">木</span><span class="nick">木子李</span><span class="stamp">今天 13:26</span></div>
+          <p>四维打分表如果能再细一点就好了，现在只能看总分和简要说明。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#2c4270">夏</span><span class="nick">夏至未至</span><span class="stamp">今天 12:09</span></div>
+          <p>高压限时赛两小时真的紧张，建议第一次参加先打新人赛适应节奏。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#c8862a">拾</span><span class="nick">拾光者</span><span class="stamp">今天 11:44</span></div>
+          <p>赛后保留本地版本这个建议很实在，复盘的时候对照评分表方便很多。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#2f7d6d">云</span><span class="nick">云归处</span><span class="stamp">今天 10:57</span></div>
+          <p>个人赛和团队赛都试过，还是更喜欢一个人做，不用反复对进度。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#5b4b8a">半</span><span class="nick">半盏茶</span><span class="stamp">今天 10:18</span></div>
+          <p>评审侧重那句提示挺关键，之前没注意权重，白练了两天。</p>
+        </div>
+        <div class="comment">
+          <div class="ch"><span class="avatar" style="background:#3a5285">程</span><span class="nick">程小满</span><span class="stamp">今天 09:36</span></div>
+          <p>赛事周报的命题方向总结可以，省得自己翻一周的题。</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="section" id="news">
+      <div class="sec-head">
+        <div>
+          <h2>赛事资讯</h2>
+          <div class="sub">赛制变化、命题方向与评审说明</div>
+        </div>
+      </div>
+      <ul class="news-list">
+        <li>
+          <div class="nh"><a href="/#deep">本周命题方向集中在城市与日常场景</a><time datetime="2025-06-11">2025-06-11</time></div>
+          <p>从本周赛题分布看，城市细节与日常片段成为主要命题来源，完成度要求普遍上调。</p>
+        </li>
+        <li>
+          <div class="nh"><a href="/#deep">综合竞技赛区调整执行维度权重</a><time datetime="2025-06-10">2025-06-10</time></div>
+          <p>执行维度权重上调后，局部精细但整体松散的作品得分明显下降。</p>
+        </li>
+        <li>
+          <div class="nh"><a href="/#cats">短周期赛独立分类，按可用时间筛选</a><time datetime="2025-06-09">2025-06-09</time></div>
+          <p>两小时以内可完成的赛题集中归类，方便用户在碎片时间选择合适场次。</p>
+        </li>
+        <li>
+          <div class="nh"><a href="/#guide">组队赛分工说明模板上线</a><time datetime="2025-06-08">2025-06-08</time></div>
+          <p>模板包含分工描述、沟通方式与检查节点三部分，可在开赛前填写。</p>
+        </li>
+        <li>
+          <div class="nh"><a href="/#faq">新人练习赛增加往期高分作品对照</a><time datetime="2025-06-06">2025-06-06</time></div>
+          <p>每道新人题下新增两到三份往期高分作品，附简要点评，便于入门参考。</p>
+        </li>
+        <li>
+          <div class="nh"><a href="/#trend">限时命题超时提交比例下降</a><time datetime="2025-06-04">2025-06-04</time></div>
+          <p>固定检查清单的引入让超时与规格不符的失分情况有所减少。</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="section" id="rec">
+      <div class="sec-head">
+        <div>
+          <h2>相关赛事与内容方向</h2>
+          <div class="sub">按类型与需求延伸的阅读入口</div>
+        </div>
+      </div>
+      <p class="sec-intro">以下方向与当前页面内容互补，可按自己的参赛阶段选择。</p>
+      <div class="rec-grid">
+        <a class="rec" href="/#hot"><span class="idx">01</span>限时命题赛的构思方法</a>
+        <a class="rec" href="/#hot"><span class="idx">02</span>新人练习赛七日通关路径</a>
+        <a class="rec" href="/#deep"><span class="idx">03</span>创意组评分维度拆解</a>
+        <a class="rec" href="/#deep"><span class="idx">04</span>团队协作赛分工比例对照</a>
+        <a class="rec" href="/#guide"><span class="idx">05</span>个人赛与团队赛怎么选</a>
+        <a class="rec" href="/#faq"><span class="idx">06</span>晋级线百分比机制说明</a>
+        <a class="rec" href="/#news"><span class="idx">07</span>赛题提交规格检查清单</a>
+        <a class="rec" href="/#comments"><span class="idx">08</span>参赛者赛后复盘经验</a>
+      </div>
+    </section>
+
+    <!-- 11. 趋势观察 -->
+    <section class="section" id="trend">
+      <div class="sec-head">
+        <div>
+          <h2>趋势观察：赛题方向与参与结构</h2>
+          <div class="sub">近两周赛事内容的三个变化</div>
+        </div>
+      </div>
+      <ul class="trend-list">
+        <li>
+          <b>命题更偏向具体场景</b>
+          <span>抽象主题减少，带具体场景限制的题目增加，考察点从“想得开”转向“做得准”。</span>
+          <div class="bar"><i style="width:78%"></i></div>
+        </li>
+        <li>
+          <b>短周期赛参与比例上升</b>
+          <span>两小时以内可完成的赛题提交量增长明显，碎片时间参赛逐渐成为主要方式。</span>
+          <div class="bar"><i style="width:64%"></i></div>
+        </li>
+        <li>
+          <b>组队赛分工说明趋于固定</b>
+          <span>提交分工说明的队伍比例提高，赛前明确分工与检查节点的队伍得分更稳定。</span>
+          <div class="bar"><i style="width:52%"></i></div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- 右栏 -->
+  <aside class="right-col" aria-label="辅助阅读">
+    <div class="side-card">
+      <div class="side-title">本页目录</div>
+      <ul class="toc">
+        <li><a href="/#intro">平台简介</a></li>
+        <li><a href="/#hot">热门赛事推荐</a></li>
+        <li><a href="/#updates">赛程动态</a></li>
+        <li><a href="/#cats">赛事分类入口</a></li>
+        <li><a href="/#deep">赛事深度解析</a></li>
+        <li><a href="/#guide">参赛体验指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#news">赛事资讯</a></li>
+        <li><a href="/#rec">相关推荐</a></li>
+        <li><a href="/#trend">趋势观察</a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门条目</div>
+      <ul class="rank-list">
+        <li><a href="/#hot">限时命题·城市一角创意赛<span class="r-meta">今晚截止 · 提交 1,286 份</span></a></li>
+        <li><a href="/#hot">团队协作赛·三人分工挑战<span class="r-meta">组队中 · 318 支队伍</span></a></li>
+        <li><a href="/#hot">新人练习赛·基础题七日连做<span class="r-meta">推荐入门 · 2,041 人参与</span></a></li>
+        <li><a href="/#hot">综合竞技·高压限时命题赛<span class="r-meta">晋级前 15%</span></a></li>
+        <li><a href="/#hot">轻量组队赛·双人配合练习<span class="r-meta">随时加入 · 452 支队伍</span></a></li>
+        <li><a href="/#hot">评审公开场·四维打分演示赛<span class="r-meta">展示 86 份作品</span></a></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <div class="side-title">延伸阅读</div>
+      <div class="read-next">
+        <a href="/#deep">四个评审维度分别看什么<span>完成度、创意、执行、表达</span></a>
+        <a href="/#deep">限时命题的常见节奏安排<span>两小时怎么分配</span></a>
+        <a href="/#guide">个人赛与团队赛的判断方法<span>按赛题耦合度选择</span></a>
+        <a href="/#faq">晋级线为什么每天不同<span>百分比机制说明</span></a>
+        <a href="/#news">本周命题方向汇总<span>城市与日常场景</span></a>
+      </div>
+    </div>
+    <div class="side-card">
+      <div class="side-title">热门搜索词</div>
+      <div class="tag-cloud">
+        <a href="/#cats">限时命题赛</a>
+        <a href="/#cats">新人练习赛</a>
+        <a href="/#cats">团队协作赛</a>
+        <a href="/#cats">创意组评分</a>
+        <a href="/#cats">短周期赛</a>
+        <a href="/#cats">晋级线</a>
+        <a href="/#cats">分工说明</a>
+        <a href="/#cats">评审打分表</a>
+      </div>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-text">每日大赛mrds平台</span>
+        <p>以每日开赛为核心的赛事内容门户，汇总赛程看点、参赛流程、评审维度与组队选择对比，服务参赛者与观赛用户。</p>
+      </div>
+      <div class="foot-cols">
+        <div>
+          <h4>赛事内容</h4>
+          <ul>
+            <li><a href="/#hot">热门赛事</a></li>
+            <li><a href="/#updates">赛程动态</a></li>
+            <li><a href="/#cats">赛事分类</a></li>
+            <li><a href="/#trend">趋势观察</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>参赛参考</h4>
+          <ul>
+            <li><a href="/#deep">赛事深度解析</a></li>
+            <li><a href="/#guide">参赛体验指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#rec">相关推荐</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>社区与资讯</h4>
+          <ul>
+            <li><a href="/#comments">用户评论</a></li>
+            <li><a href="/#news">赛事资讯</a></li>
+            <li><a href="/#intro">平台简介</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 每日大赛mrds平台 · 内容展示页</span>
+      <span class="example-note">部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var grid = document.getElementById('hotGrid');
+  var emptyTip = document.getElementById('hotEmpty');
+  var note = document.getElementById('filterNote');
+  if(!form || !input || !grid) return;
+
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+
+  function applyFilter(q){
+    q = (q || '').trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function(card){
+      var text = (card.getAttribute('data-keywords') || '') + ' ' + card.textContent;
+      var hit = !q || text.toLowerCase().indexOf(q) > -1;
+      card.classList.toggle('is-hidden', !hit);
+      if(hit) shown++;
+    });
+    if(q){
+      note.textContent = '当前筛选：“' + q + '”，匹配到 ' + shown + ' 场赛事。';
+      note.classList.add('show');
+    } else {
+      note.classList.remove('show');
+      note.textContent = '';
+    }
+    emptyTip.style.display = shown === 0 ? 'block' : 'none';
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    applyFilter(input.value);
+    document.getElementById('hot').scrollIntoView({behavior:'smooth'});
+  });
+
+  input.addEventListener('input', function(){
+    if(input.value.trim() === ''){ applyFilter(''); }
+  });
+})();
+</script>
+
+</body>
+                                  </html>
